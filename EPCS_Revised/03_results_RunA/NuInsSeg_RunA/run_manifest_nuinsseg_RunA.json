@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "models": [
+    "unet",
+    "unetpp",
+    "unet3plus",
+    "eunet3plus",
+    "sam_unet",
+    "epcs_net"
+  ],
+  "epochs": 50,
+  "image_size": 256,
+  "batch_size": 1,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "ospt_enabled": true,
+  "split_sha256": "557cbbc4b03e2d856bdf574324d17798237b06788f4e6e69a0883c95fd3dcffc",
+  "python": "3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)]",
+  "pytorch": "2.10.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA RTX 4500 Ada Generation"
+}

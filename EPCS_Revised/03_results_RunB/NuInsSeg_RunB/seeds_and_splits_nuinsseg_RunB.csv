@@ -1,0 +1,6 @@
+dataset,seed_index,seed_value,completed,split_csv,split_sha256,n_total_images,n_train,n_validation
+nuinsseg,1,42,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\NuInsSeg_RunA\splits\split_nuinsseg_80_20_seed42_RunA.csv,3a8a2da24f169a669e24c4904f910c63c71fe67cbe546370bced3751b33383c3,665,532,133
+nuinsseg,2,123,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\NuInsSeg_RunA\splits\split_nuinsseg_80_20_seed42_RunA.csv,3a8a2da24f169a669e24c4904f910c63c71fe67cbe546370bced3751b33383c3,665,532,133
+nuinsseg,3,456,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\NuInsSeg_RunA\splits\split_nuinsseg_80_20_seed42_RunA.csv,3a8a2da24f169a669e24c4904f910c63c71fe67cbe546370bced3751b33383c3,665,532,133
+nuinsseg,4,789,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\NuInsSeg_RunA\splits\split_nuinsseg_80_20_seed42_RunA.csv,3a8a2da24f169a669e24c4904f910c63c71fe67cbe546370bced3751b33383c3,665,532,133
+nuinsseg,5,2024,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\NuInsSeg_RunA\splits\split_nuinsseg_80_20_seed42_RunA.csv,3a8a2da24f169a669e24c4904f910c63c71fe67cbe546370bced3751b33383c3,665,532,133

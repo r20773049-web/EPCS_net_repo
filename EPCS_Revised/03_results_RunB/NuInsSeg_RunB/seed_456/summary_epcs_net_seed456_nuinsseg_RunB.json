@@ -1,0 +1,31 @@
+{
+  "model": "epcs_net",
+  "dataset": "nuinsseg",
+  "seed": 456,
+  "split_csv": "C:\\Users\\Admin\\Desktop\\EPCS\\02_code_RunA\\NuInsSeg_RunA\\splits\\split_nuinsseg_80_20_seed42_RunA.csv",
+  "split_sha256": "3a8a2da24f169a669e24c4904f910c63c71fe67cbe546370bced3751b33383c3",
+  "best_epoch": 9,
+  "best_validation_dice": 0.6792179903138346,
+  "epochs_requested": 50,
+  "loss": "FTAS (0.3 BCE + 0.7 focal-Tversky)",
+  "parameters_total": 120417697,
+  "parameters_trainable": 26682225,
+  "validation_milliseconds_per_image": 160.2613406013054,
+  "cuda_peak_allocated_mib": 3408.451171875,
+  "metric_mean": {
+    "accuracy": 0.9136561343544408,
+    "precision": 0.7088698953581823,
+    "recall": 0.7600746840283331,
+    "specificity": 0.941479824552847,
+    "dice": 0.6792179903138346,
+    "iou": 0.5354617681345363
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.06254207432228101,
+    "precision": 0.20227656136996947,
+    "recall": 0.22789731744286967,
+    "specificity": 0.06374195075268359,
+    "dice": 0.16421144505319957,
+    "iou": 0.17395141924933516
+  }
+}

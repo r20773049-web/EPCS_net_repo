@@ -1,0 +1,11 @@
+# Trained model checkpoints (.pt) are excluded from normal git tracking --
+# every EPCS-Net checkpoint is ~102 MB, over GitHub's 100 MB hard limit for
+# a plain `git push`. They're still physically present in this folder for
+# local reference; they get attached to the repo via GitHub Releases
+# instead (Releases -> Draft a new release -> attach as assets), which
+# Zenodo archives the same way it archives the rest of the repo.
+*.pt
+
+# Python bytecode, just in case
+__pycache__/
+*.pyc

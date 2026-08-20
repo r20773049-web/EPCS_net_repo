@@ -1,0 +1,40 @@
+{
+  "model": "epcs_net",
+  "dataset": "cryonuseg",
+  "seed": 42,
+  "split_csv": "C:\\Users\\Admin\\Desktop\\EPCS\\02_code_RunA\\CryoNuSeg_RunA\\splits\\split_cryonuseg_24_6_seed42_RunA.csv",
+  "split_sha256": "65dede9f710f4de4027a8c519e0989aec24a681bbb7858c7809e6538d25d8789",
+  "ospt_enabled": false,
+  "best_epoch": 21,
+  "best_validation_dice": 0.8470650893774364,
+  "epochs_requested": 50,
+  "loss": "FTAS (0.3 BCE + 0.7 focal-Tversky)",
+  "parameters_total": 120417697,
+  "parameters_trainable": 26682225,
+  "validation_milliseconds_per_image": 412.9578166666761,
+  "cuda_peak_allocated_mib": 3305.6513671875,
+  "image_size": 256,
+  "batch_size": 1,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "python": "3.12.8",
+  "pytorch": "2.10.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA RTX 4500 Ada Generation",
+  "metric_mean": {
+    "accuracy": 0.9022903442382812,
+    "precision": 0.8014360281800458,
+    "recall": 0.904865255690202,
+    "specificity": 0.8975723583563538,
+    "dice": 0.8470650893774364,
+    "iou": 0.737400712112748
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.033103981026836066,
+    "precision": 0.09012784496112411,
+    "recall": 0.03250835392550572,
+    "specificity": 0.04231356755081192,
+    "dice": 0.05034337707782183,
+    "iou": 0.0741824975965631
+  }
+}

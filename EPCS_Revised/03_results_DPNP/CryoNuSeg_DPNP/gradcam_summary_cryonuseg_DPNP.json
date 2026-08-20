@@ -1,0 +1,12 @@
+{
+  "dataset": "cryonuseg",
+  "n_images": 6,
+  "threshold_used": 0.5,
+  "overlap_metric": "IoU between thresholded CAM and ground-truth nuclei mask",
+  "target_layer": "model.d1 (final feature map before the 1x1 output head)",
+  "gradcam_score_definition": "S = mean(sigmoid(logits)) over the full image (paper eq. 27)",
+  "mean_overlap_iou": 0.31126479680137,
+  "sd_overlap_iou": 0.11407533413944938,
+  "min_overlap_iou": 0.1435352622061483,
+  "max_overlap_iou": 0.4547752020217778
+}

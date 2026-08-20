@@ -1,0 +1,30 @@
+{
+  "model": "epcs_net",
+  "seed": 42,
+  "split_csv": "C:\\Users\\Admin\\Desktop\\EPCS\\NuInsSeg_RunA\\splits\\nuinsseg_80_20_seed42.csv",
+  "ospt_enabled": true,
+  "best_epoch": 35,
+  "best_validation_dice": 0.7366128963694046,
+  "epochs_requested": 50,
+  "loss": "FTAS/focal-Tversky",
+  "parameters_total": 120417697,
+  "parameters_trainable": 26682225,
+  "validation_milliseconds_per_image": 160.0948563908534,
+  "cuda_peak_allocated_mib": 3410.326171875,
+  "metric_mean": {
+    "accuracy": 0.9307763809548285,
+    "precision": 0.7209273722026526,
+    "recall": 0.8187482179439612,
+    "specificity": 0.9513321523688092,
+    "dice": 0.7366128963694046,
+    "iou": 0.5990311649870917
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.04584196670578815,
+    "precision": 0.17992127245162054,
+    "recall": 0.1520552999475546,
+    "specificity": 0.04012093547206565,
+    "dice": 0.13753530504368752,
+    "iou": 0.14999063186731484
+  }
+}

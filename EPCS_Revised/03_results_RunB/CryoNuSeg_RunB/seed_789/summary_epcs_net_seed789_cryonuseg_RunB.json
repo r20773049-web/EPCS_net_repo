@@ -1,0 +1,31 @@
+{
+  "model": "epcs_net",
+  "dataset": "cryonuseg",
+  "seed": 789,
+  "split_csv": "C:\\Users\\Admin\\Desktop\\EPCS\\02_code_RunA\\CryoNuSeg_RunA\\splits\\split_cryonuseg_24_6_seed42_RunA.csv",
+  "split_sha256": "65dede9f710f4de4027a8c519e0989aec24a681bbb7858c7809e6538d25d8789",
+  "best_epoch": 38,
+  "best_validation_dice": 0.8487949605883793,
+  "epochs_requested": 50,
+  "loss": "FTAS (0.3 BCE + 0.7 focal-Tversky)",
+  "parameters_total": 120417697,
+  "parameters_trainable": 26682225,
+  "validation_milliseconds_per_image": 426.98799999986176,
+  "cuda_peak_allocated_mib": 3298.8701171875,
+  "metric_mean": {
+    "accuracy": 0.9036865234375,
+    "precision": 0.8124614815933494,
+    "recall": 0.8913753844546095,
+    "specificity": 0.8992552228466767,
+    "dice": 0.8487949605883793,
+    "iou": 0.7393504034626514
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.03338832395360601,
+    "precision": 0.06640888860268815,
+    "recall": 0.03879494790917689,
+    "specificity": 0.04733409521172063,
+    "dice": 0.04325540669871456,
+    "iou": 0.06520256651920787
+  }
+}

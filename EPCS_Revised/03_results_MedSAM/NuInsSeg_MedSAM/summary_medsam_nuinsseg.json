@@ -1,0 +1,26 @@
+{
+  "model": "medsam",
+  "dataset": "nuinsseg",
+  "checkpoint": "wanglab/medsam-vit-base",
+  "protocol": "frozen zero-shot inference, whole-image box prompt, no fine-tuning",
+  "split_csv": "C:\\Users\\Admin\\Desktop\\EPCS\\02_code_RunA\\NuInsSeg_RunA\\splits\\split_nuinsseg_80_20_seed42_RunA.csv",
+  "n_validation_images": 133,
+  "validation_milliseconds_per_image": 413.6537879700123,
+  "cuda_peak_allocated_mib": 2772.7119140625,
+  "metric_mean": {
+    "accuracy": 0.7247267701572045,
+    "precision": 0.23977232655951974,
+    "recall": 0.24359438894934768,
+    "specificity": 0.8166154922078231,
+    "dice": 0.16700076671140496,
+    "iou": 0.09607156063273706
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.17086950895077083,
+    "precision": 0.21358869214976042,
+    "recall": 0.2507979737889006,
+    "specificity": 0.21525856149809813,
+    "dice": 0.11856907536298295,
+    "iou": 0.0778481572027075
+  }
+}

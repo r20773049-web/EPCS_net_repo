@@ -1,0 +1,6 @@
+dataset,seed_index,seed_value,completed,split_csv,split_sha256,n_total_images,n_train,n_validation
+cryonuseg,1,42,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\CryoNuSeg_RunA\splits\split_cryonuseg_24_6_seed42_RunA.csv,65dede9f710f4de4027a8c519e0989aec24a681bbb7858c7809e6538d25d8789,30,24,6
+cryonuseg,2,123,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\CryoNuSeg_RunA\splits\split_cryonuseg_24_6_seed42_RunA.csv,65dede9f710f4de4027a8c519e0989aec24a681bbb7858c7809e6538d25d8789,30,24,6
+cryonuseg,3,456,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\CryoNuSeg_RunA\splits\split_cryonuseg_24_6_seed42_RunA.csv,65dede9f710f4de4027a8c519e0989aec24a681bbb7858c7809e6538d25d8789,30,24,6
+cryonuseg,4,789,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\CryoNuSeg_RunA\splits\split_cryonuseg_24_6_seed42_RunA.csv,65dede9f710f4de4027a8c519e0989aec24a681bbb7858c7809e6538d25d8789,30,24,6
+cryonuseg,5,2024,True,C:\Users\Admin\Desktop\EPCS\02_code_RunA\CryoNuSeg_RunA\splits\split_cryonuseg_24_6_seed42_RunA.csv,65dede9f710f4de4027a8c519e0989aec24a681bbb7858c7809e6538d25d8789,30,24,6

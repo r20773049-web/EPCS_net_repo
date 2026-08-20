@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "models": [
+    "epcs_net"
+  ],
+  "epochs": 50,
+  "image_size": 256,
+  "batch_size": 1,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "split_sha256": "f308d2f4a1b90e61fac373bc7099012d20832c9fcca282832731c1316b2a8d29",
+  "python": "3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)]",
+  "pytorch": "2.10.0+cu130",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA RTX 4500 Ada Generation"
+}

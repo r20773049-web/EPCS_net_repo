@@ -1,0 +1,30 @@
+{
+  "model": "unetpp",
+  "seed": 42,
+  "split_csv": "C:\\Users\\Admin\\Desktop\\EPCS\\NuInsSeg_RunA\\splits\\nuinsseg_80_20_seed42.csv",
+  "ospt_enabled": true,
+  "best_epoch": 37,
+  "best_validation_dice": 0.5872336139687634,
+  "epochs_requested": 50,
+  "loss": "BCEWithLogits + Dice",
+  "parameters_total": 2291969,
+  "parameters_trainable": 2291969,
+  "validation_milliseconds_per_image": 9.153171428553655,
+  "cuda_peak_allocated_mib": 317.69873046875,
+  "metric_mean": {
+    "accuracy": 0.9124237290002349,
+    "precision": 0.8040477389441442,
+    "recall": 0.5624582054445638,
+    "specificity": 0.9729405800935539,
+    "dice": 0.5872336139687634,
+    "iou": 0.4519716834758167
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.0687817713395147,
+    "precision": 0.18608470340690034,
+    "recall": 0.3044815487468838,
+    "specificity": 0.03417961023927336,
+    "dice": 0.23527415163220738,
+    "iou": 0.22192033188820307
+  }
+}

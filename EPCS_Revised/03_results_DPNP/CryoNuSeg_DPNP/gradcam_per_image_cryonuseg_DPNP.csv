@@ -1,0 +1,7 @@
+filename,gradcam_iou_overlap,threshold
+Human_AdrenalGland_01.tif,0.3850788360466607,0.5
+Human_Larynx_01.tif,0.3668287664827457,0.5
+Human_LymphNodes_02.tif,0.1435352622061483,0.5
+Human_LymphNodes_03.tif,0.4547752020217778,0.5
+Human_Skin_03.tif,0.22497768710952443,0.5
+Human_Testes_03.tif,0.29239302694136293,0.5

@@ -1,0 +1,24 @@
+{
+  "primary_config": {
+    "min_cluster_size": 92,
+    "min_cluster_size_formula": "max(5, N/10), as stated in the paper",
+    "min_samples": 5,
+    "metric": "euclidean",
+    "n_clusters_found": 0,
+    "n_outliers": 925,
+    "outlier_fraction": 1.0,
+    "silhouette_score": null
+  },
+  "sensitivity_check_fixed_min_cluster_size_5": {
+    "min_cluster_size": 5,
+    "min_samples": 5,
+    "metric": "euclidean",
+    "n_clusters_found": 2,
+    "n_outliers": 294,
+    "outlier_fraction": 0.3178378378378378,
+    "silhouette_score": 0.40878203573317
+  },
+  "pca_dims_used_for_clustering": 40,
+  "n_nuclei_total": 925,
+  "silhouette_score_note": "computed excluding outlier-labelled (-1) points; None if fewer than 2 clusters were found"
+}
