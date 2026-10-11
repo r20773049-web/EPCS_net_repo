@@ -1,0 +1,4 @@
+component,explained_variance_pct,n_interpretable_features,n_embedding_features,loading_mass_interpretable_pct,loading_mass_embedding_pct,top_interpretable_feature
+PC1,19.904362296187784,7,512,1.1886242412007024,98.8113757587993,area
+PC2,11.689965593880721,7,512,0.7868714075220311,99.21312859247797,a
+PC3,8.07129530748736,7,512,1.0391238751128447,98.96087612488715,var_intensity

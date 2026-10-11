@@ -1,0 +1,28 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\03_code\analysis\latency_r3.py
+# exit code: 0
+# seconds: 83.5
+
+===== STDOUT =====
+Controlled latency measurement  2026-10-08 00:44:55
+  device       : NVIDIA RTX PRO 4000 Blackwell
+  protocol     : 20 warm-up discarded, 100 timed iterations
+  input        : 1 x 3 x 256 x 256, FP32, resident on device before timing
+  boundaries   : torch.cuda.synchronize either side of the forward pass only
+  excluded     : data loading, preprocessing, metric computation, mask writing
+  SAM          : recomputed live (the training cache is NOT used here)
+  GPU state    : utilisation max 10% , memory max 1129 MiB over 5 samples
+
+model                  mean ms   median             IQR    img/s   VRAM MiB
+unet                      2.08     1.89    1.84-2.09       481.4        131
+unetpp                    3.06     2.83    2.78-3.08       326.6         94
+unet3plus                 6.98     6.91    6.67-7.10       143.2        424
+eunet3plus                2.52     2.52    2.46-2.56       396.5        134
+sam_unet                145.96   147.24  144.01-147.87       6.9       2838
+epcs_net                151.71   153.09  149.06-153.88       6.6       2909
+ref21_bottleneck        146.58   147.89  143.35-149.15       6.8       2860
+ref21_pyramid           149.94   151.29  146.97-152.51       6.7       2864
+
+Wrote <PROJECT_ROOT>\04_results\latency\latency_r3.json and latency_r3.csv
+
+===== STDERR =====
+

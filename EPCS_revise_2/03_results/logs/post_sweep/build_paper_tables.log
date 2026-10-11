@@ -1,0 +1,26 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\03_code\tables\build_paper_tables.py
+# exit code: 0
+# seconds: 0.9
+
+===== STDOUT =====
+Built 13 tables:
+  - CryoNuSeg quantitative
+  - NuInsSeg quantitative
+  - CryoNuSeg cost
+  - NuInsSeg cost
+  - per-run detail
+  - significance
+  - bootstrap
+  - ablation
+  - per-organ
+  - DPNP NuInsSeg
+  - DPNP CryoNuSeg
+  - components vs instances
+  - OSPT sampling
+
+  <PROJECT_ROOT>\04_results\paper_tables\EPCS_R3_Paper_Tables.xlsx
+  <PROJECT_ROOT>\04_results\paper_tables\OLD_VS_NEW.xlsx
+  <PROJECT_ROOT>\04_results\paper_tables\latex  (7 LaTeX files)
+
+===== STDERR =====
+

@@ -1,0 +1,58 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_overleaf_project.py
+# exit code: 0
+# seconds: 5.9
+
+===== STDOUT =====
+== Verification ==
+[PASS] (a) reassembled + reversed figure paths == EPCS_revise3.tex byte for byte (source 169720 bytes, reproduced 169720, CRLF preserved, no final-newline difference)
+[PASS] (b) inputs/figures exist, no figures_r3 prefix inputs=15 missing=none; extensions correct (jpg only for the 2 photographic panels): True; includegraphics=20 missing=none; leftover figures_r3/ in tex: False; unused png in figures/: none
+    braces net: 0
+    table: 19/19 OK
+    figure: 20/20 OK
+    equation: 30/30 OK
+    itemize: 3/3 OK
+    tabular: 19/19 OK
+    enumerate: 0/0 OK
+    document: 1/1 OK
+    thebibliography: 1/1 OK
+    duplicate labels: none | dangling refs: none
+    cites without bibitem: none | uncited bibitems: none
+    TODO markers: [('%%TODO-ZENODO-DOI', 1311)]
+[PASS] (c) static tex checks on assembled text (identical to source-file results: True; delta in labels/refs/cites vs source: none)
+[PASS] (d) zip contents + extracted tree passes (b); scratch cleaned (39 entries; inputs=15 missing=none; extensions correct (jpg only for the 2 photographic panels): True; includegraphics=20 missing=none; leftover figures_r3/ in tex: False; unused png in figures/: none; assembled text identical: True)
+(e) project size 11.81 MB in 39 files; zip 11.25 MB
+    3.09 MB  figures/r3_gradcam_table_cryonuseg.png
+    1.68 MB  figures/r3_gradcam_table_nuinsseg.png
+    0.96 MB  figures/fig1_pipeline.png
+    0.89 MB  figures/fig3_acfb.png
+    0.76 MB  figures/r3_qual_cryonuseg.jpg
+    0.57 MB  figures/fig4_fsfd.png
+== Figure optimisation (before -> after) ==
+  fig1_pipeline.png                                    RGBA  4087x4727  19.3MP  1.04MB -> fig1_pipeline.png                                    RGB 2200x2545  5.6MP  0.96MB
+  fig2_pspi.png                                        RGBA  3225x2562   8.3MP  0.45MB -> fig2_pspi.png                                        RGB 2000x1589  3.2MP  0.48MB
+  fig3_acfb.png                                        RGBA  2337x3584   8.4MP  0.54MB -> fig3_acfb.png                                        RGB 2000x3067  6.1MP  0.89MB
+  fig4_fsfd.png                                        RGBA  2987x2775   8.3MP  0.47MB -> fig4_fsfd.png                                        RGB 2000x1858  3.7MP  0.57MB
+  r3_seed_fold_stability.png                           RGBA  3411x1397   4.8MP  0.19MB -> r3_seed_fold_stability.png                           RGB 2000x819  1.6MP  0.17MB
+  r3_qual_cryonuseg.png                                RGB   2000x1627   3.3MP  2.58MB -> r3_qual_cryonuseg.jpg                                RGB 2000x1627  3.3MP  0.76MB
+  r3_headline_comparison.png                           RGBA  3860x1517   5.9MP  0.24MB -> r3_headline_comparison.png                           RGB 2000x786  1.6MP  0.24MB
+  r3_per_organ_cryonuseg.png                           RGBA  2359x1426   3.4MP  0.12MB -> r3_per_organ_cryonuseg.png                           RGB 2000x1209  2.4MP  0.19MB
+  r3_per_organ_nuinsseg.png                            RGBA  2365x3569   8.4MP  0.33MB -> r3_per_organ_nuinsseg.png                            RGB 2000x3018  6.0MP  0.50MB
+  r3_training_curves.png                               RGBA  3844x1480   5.7MP  0.55MB -> r3_training_curves.png                               RGB 2000x770  1.5MP  0.36MB
+  r3_qual_nuinsseg.png                                 RGB   2000x1709   3.4MP  1.18MB -> r3_qual_nuinsseg.jpg                                 RGB 2000x1709  3.4MP  0.28MB
+  r3_gradcam_table_nuinsseg.png                        RGB   2000x2373   4.7MP  1.89MB -> r3_gradcam_table_nuinsseg.png                        RGB 2000x2373  4.7MP  1.68MB
+  r3_gradcam_table_cryonuseg.png                       RGB   2000x2373   4.7MP  3.15MB -> r3_gradcam_table_cryonuseg.png                       RGB 2000x2373  4.7MP  3.09MB
+  r3_dpnp_pca.png                                      RGBA  3112x1337   4.2MP  0.23MB -> r3_dpnp_pca.png                                      RGB 2000x859  1.7MP  0.22MB
+  r3_dpnp_pca_cryonuseg.png                            RGBA  3112x1337   4.2MP  0.26MB -> r3_dpnp_pca_cryonuseg.png                            RGB 2000x859  1.7MP  0.25MB
+  r3_dpnp_hdbscan.png                                  RGBA  3262x1517   4.9MP  0.24MB -> r3_dpnp_hdbscan.png                                  RGB 2000x930  1.9MP  0.24MB
+  r3_dpnp_hdbscan_cryonuseg.png                        RGBA  3262x1517   4.9MP  0.24MB -> r3_dpnp_hdbscan_cryonuseg.png                        RGB 2000x930  1.9MP  0.25MB
+  r3_dpnp_stability_confounds.png                      RGBA  3261x1337   4.4MP  0.12MB -> r3_dpnp_stability_confounds.png                      RGB 2000x820  1.6MP  0.11MB
+  r3_dpnp_stability_confounds_cryonuseg.png            RGBA  3261x1337   4.4MP  0.11MB -> r3_dpnp_stability_confounds_cryonuseg.png            RGB 2000x820  1.6MP  0.10MB
+  r3_ablation_5seed.png                                RGBA  3112x1761   5.5MP  0.27MB -> r3_ablation_5seed.png                                RGB 2000x1132  2.3MP  0.31MB
+  TOTAL 14.18 MB -> 11.63 MB
+[FAIL] (f) all figures RGB, <=2200 px wide, total < 10 MB (11.63 MB; the 8 MB target is not reachable losslessly: the size of a PNG grows slightly when a dense raster is downscaled)
+sections: ['01_introduction.tex', '02_related_work.tex', '03_methodology.tex', '04_experiments_and_results.tex', '05_discussion.tex', '06_conclusion.tex', '07_authors_contribution_and_credit.tex', '08_funding.tex', '09_declarations.tex', '10_conflict_of_interest.tex', '11_ethical_approval.tex', '12_additional_information.tex', '13_data_availability.tex', '14_code_availability.tex']
+figure table rows: 20 | TODO markers: [('%%TODO-ZENODO-DOI', 'sections/14_code_availability.tex', 4)]
+SOME CHECKS FAILED
+
+===== STDERR =====
+

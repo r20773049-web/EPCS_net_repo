@@ -1,0 +1,12 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_epoch_workbooks.py
+# exit code: 0
+# seconds: 3.2
+
+===== STDOUT =====
+cryonuseg runs 175 models 19
+nuinsseg runs 40 models 8
+columns: ['epoch', 'train_loss', 'validation_accuracy', 'validation_dice', 'validation_iou', 'validation_precision', 'validation_recall', 'validation_specificity']
+issues: none
+
+===== STDERR =====
+

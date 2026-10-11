@@ -1,0 +1,84 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_overleaf_package.py
+# exit code: 0
+# seconds: 0.7
+
+===== STDOUT =====
+baseline: EPCS_revise2.tex | new: EPCS_revise3.tex 
+wrote <PROJECT_ROOT>\05_manuscript\package\EPCS_revise3_HIGHLIGHTED.tex
+hl spans: 579 | env blocks marked revised: 43
+   marked table tab:datasets
+   marked equation eq:norm
+   marked figure fig:pipeline
+   marked equation eq:ospt_w
+   marked table tab:ospt
+   marked equation eq:doubleconv
+   marked table tab:encoder
+   marked figure fig:pspi
+   marked equation eq:acfb_out
+   marked figure fig:acfb
+   marked table tab:acfb
+   marked figure fig:fsfd
+   marked table tab:hyperparams
+   marked table tab:seeds
+   marked figure fig:seedstability
+   marked table tab:medsam
+   marked table tab:cryo
+   marked table tab:cryo_efficiency
+   marked table tab:paired
+   marked table tab:cryo_perfold
+   marked table tab:cryo_allmetrics
+   marked figure fig:cryo_qual
+   marked table tab:nu
+   marked table tab:nu_allmetrics
+   marked table tab:nu_efficiency
+   marked figure fig:headline
+   marked table tab:nu_paired
+   marked figure fig:organ_cryo
+   marked figure fig:organ_nu
+   marked figure fig:trainingcurves
+   marked figure fig:nu_qual
+   marked figure fig:gradcam
+   marked figure fig:gradcam_cryo
+   marked table tab:pca
+   marked table tab:feature_bias
+   marked figure fig:pca
+   marked figure fig:pca_cryo
+   marked figure fig:hdbscan
+   marked figure fig:hdbscan_cryo
+   marked figure fig:stability_nu
+   marked figure fig:stability_cryo
+   marked table tab:ablation
+   marked figure fig:ablation
+count             clean     HL
+table                19     19
+table*                0      0
+figure               20     20
+figure*               0      0
+equation             30     30
+align                 0      0
+tabular              19     19
+itemize               3      3
+enumerate             0      0
+includegraphics      20     20
+label               107    107
+bibitem              73     73
+cite                 93     93
+ref                 190    190
+labels/bibitems identical sequence: True
+hl spans: 579, violations: 0
+round-trip (strip \hl, markers, soul) == clean: True
+VERIFY: PASS
+
+== TODO markers: 1 ==
+  line 1311: The results reported in this paper come from one script per model per dataset over a single shared training an
+  by kind: {'TODO-ZENODO-DOI': 1}
+
+== Figures: 20 referenced, 20 present, 0 missing ==
+input files: 0 (missing 0)
+flat-unzip check: 0 includegraphics paths unresolved []
+
+wrote <PROJECT_ROOT>\05_manuscript\package\EPCS_revise3_overleaf_DRAFT.zip (13658399 bytes)
+status: DRAFT (markers remain or figures missing)
+
+===== STDERR =====
+

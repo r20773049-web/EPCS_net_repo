@@ -1,0 +1,27 @@
+{
+  "model": "medsam",
+  "mode": "zero_shot_wholebox",
+  "dataset": "nuinsseg",
+  "checkpoint": "wanglab/medsam-vit-base",
+  "dry_run": false,
+  "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\nuinsseg_R3_stratified_70_15_15.csv",
+  "split_used": "test",
+  "n_test_images": 103,
+  "metric_mean": {
+    "accuracy": 0.73151690288652,
+    "precision": 0.21216773631248445,
+    "recall": 0.2391104682103689,
+    "specificity": 0.8131702423297366,
+    "dice": 0.1475230801861313,
+    "iou": 0.08452691300527884
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.16835620868687534,
+    "precision": 0.2203206824885846,
+    "recall": 0.26480315411919864,
+    "specificity": 0.2104347960291318,
+    "dice": 0.11923032906132842,
+    "iou": 0.07727026672528572
+  },
+  "protocol": "round-2 protocol: one whole-image box, best-predicted-IoU of 3 masks (sanity check)"
+}

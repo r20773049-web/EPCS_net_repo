@@ -1,0 +1,85 @@
+{
+  "tag": "r3_cryonuseg",
+  "predictions_dir": "04_results\\_dpnp_cryonuseg_work\\preds",
+  "n_images": 30,
+  "n_components": 4973,
+  "feature_vector": {
+    "interpretable": [
+      "area",
+      "roundness",
+      "mean_intensity",
+      "var_intensity",
+      "L",
+      "a",
+      "b"
+    ],
+    "embedding_dims": 512,
+    "total_dims": 519
+  },
+  "pca": {
+    "n_components": 40,
+    "explained_variance_pct": [
+      24.073701197183517,
+      9.574810697689598,
+      6.753422111431127
+    ],
+    "cumulative_first_three_pct": 40.40193400630424
+  },
+  "clustering_primary_prespecified": {
+    "min_cluster_size": 497,
+    "min_samples": 5,
+    "metric": "euclidean",
+    "n_points": 4973,
+    "n_clusters": 0,
+    "outlier_pct": 100.0,
+    "silhouette_geometric_separation": null,
+    "cluster_sizes": {}
+  },
+  "clustering_sensitivity_fixed5": {
+    "min_cluster_size": 5,
+    "min_samples": 5,
+    "metric": "euclidean",
+    "n_points": 4973,
+    "n_clusters": 2,
+    "outlier_pct": 69.05288558214357,
+    "silhouette_geometric_separation": 0.25118975916271125,
+    "cluster_sizes": {
+      "0": 1534,
+      "1": 5
+    }
+  },
+  "sensitivity_stability": {
+    "n_bootstrap": 25,
+    "subsample_fraction": 0.8,
+    "ari_mean": 0.41226921007403716,
+    "ari_sd": 0.3735506217077677,
+    "ari_min": -0.01728459780281249,
+    "ari_max": 0.966395459982758,
+    "n_clusters_mean": 2.4,
+    "n_clusters_range": [
+      2,
+      4
+    ]
+  },
+  "confounds": [
+    {
+      "confound": "organ",
+      "n_levels": 10,
+      "chi2": 10.949688687804992,
+      "dof": 9,
+      "p_value": 0.279173302279778,
+      "cramers_v": 0.08434931810311619,
+      "interpretation": "no detected association"
+    },
+    {
+      "confound": "filename",
+      "n_levels": 30,
+      "chi2": 52.51330713850395,
+      "dof": 29,
+      "p_value": 0.004775523357702165,
+      "cramers_v": 0.18472061888853303,
+      "interpretation": "cluster assignment is associated with this variable"
+    }
+  ],
+  "statement": "A silhouette score measures geometric separation in a feature space. It is not biological validation. These outputs are exploratory connected-region descriptors, not per-nucleus phenotypes; see instances_r3.py for the measured merge rate."
+}

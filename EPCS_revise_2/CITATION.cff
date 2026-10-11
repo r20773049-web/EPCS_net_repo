@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper and this archive."
+title: "EPCS-Net: SAM-guided multi-scale nuclei segmentation - code and results"
+version: "1.0.0"
+date-released: "2026-10-12"
+license: MIT
+repository-code: "https://github.com/r20773049-web/EPCS_net_repo"
+authors:
+  - family-names: Shinde
+    given-names: Swati V.
+  - family-names: Warade
+    given-names: Purva S.
+  - family-names: Gabralla
+    given-names: Lubna A.
+  - family-names: Ahirrao
+    given-names: Asmita P.
+  - family-names: Wakchaure
+    given-names: Shreeja S.
+  - family-names: Chavan
+    given-names: Rutuja S.
+  - family-names: Choudhury
+    given-names: Tanupriya
+  - family-names: Minakshi
+    given-names: ""

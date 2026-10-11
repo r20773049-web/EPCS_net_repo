@@ -1,0 +1,8 @@
+dataset,baseline,n_folds,mean_difference,per_fold_differences,folds_proposed_wins,t_p_value_folds,note
+cryonuseg,eunet3plus,3,0.04449274249035514,+0.0476; +0.0382; +0.0477,3,0.00491846417699477,"n=3 folds, df=2: low power; compare with the 15-pair test"
+cryonuseg,ref21_bottleneck,3,0.026203415701048154,+0.0353; +0.0268; +0.0166,3,0.040029628804985146,"n=3 folds, df=2: low power; compare with the 15-pair test"
+cryonuseg,ref21_pyramid,3,0.03088568573564539,+0.0317; +0.0382; +0.0227,3,0.02059789057480765,"n=3 folds, df=2: low power; compare with the 15-pair test"
+cryonuseg,sam_unet,3,0.01226126308859173,+0.0135; +0.0094; +0.0139,3,0.01371950750365445,"n=3 folds, df=2: low power; compare with the 15-pair test"
+cryonuseg,unet,3,0.05099315284877237,+0.0437; +0.0607; +0.0486,3,0.009681926861477102,"n=3 folds, df=2: low power; compare with the 15-pair test"
+cryonuseg,unet3plus,3,0.06697220178319933,+0.0577; +0.1052; +0.0381,3,0.0782177353295166,"n=3 folds, df=2: low power; compare with the 15-pair test"
+cryonuseg,unetpp,3,0.07474128555812183,+0.0604; +0.0925; +0.0713,3,0.01556295465631374,"n=3 folds, df=2: low power; compare with the 15-pair test"

@@ -1,0 +1,84 @@
+{
+  "run_id": "epcs_net__nuinsseg__seed2024",
+  "dataset": "nuinsseg",
+  "split": "test",
+  "n_images": 103,
+  "threshold": 0.5,
+  "method": "hook d1, score = mean foreground probability, channel weights = spatial mean of gradients, ReLU of weighted sum, bilinear upsample, normalise to [0,1]; identical to the previously published method",
+  "overlap_mean": 0.3155007113493278,
+  "overlap_sd": 0.17264719536920628,
+  "overlap_median": 0.3074284362431985,
+  "overlap_p10": 0.0891580444759175,
+  "overlap_p90": 0.561541599400627,
+  "overlap_min": 0.01646542261251372,
+  "overlap_max": 0.700349956255468,
+  "failure_panel_figure": "<PROJECT_ROOT>\\05_manuscript\\figures\\fig13_gradcam_best_and_failure_cases_nuinsseg.png",
+  "worst_cases": [
+    {
+      "filename": "mouse fat (white and brown)_subscapula__mouse_subscapula_14.png",
+      "organ": "mouse fat (white and brown)_subscapula",
+      "gradcam_iou_overlap": 0.01646542261251372,
+      "dice": 0.3408304452896118,
+      "gt_foreground_fraction": 0.0136260986328125,
+      "n_gt_components": 7
+    },
+    {
+      "filename": "mouse fat (white and brown)_subscapula__mouse_subscapula_05.png",
+      "organ": "mouse fat (white and brown)_subscapula",
+      "gradcam_iou_overlap": 0.021739130434782608,
+      "dice": 0.16995447874069214,
+      "gt_foreground_fraction": 0.0090789794921875,
+      "n_gt_components": 3
+    },
+    {
+      "filename": "mouse fat (white and brown)_subscapula__mouse_subscapula_12.png",
+      "organ": "mouse fat (white and brown)_subscapula",
+      "gradcam_iou_overlap": 0.025,
+      "dice": 0.09976246953010559,
+      "gt_foreground_fraction": 0.006103515625,
+      "n_gt_components": 4
+    },
+    {
+      "filename": "mouse heart__mouse_heart_20.png",
+      "organ": "mouse heart",
+      "gradcam_iou_overlap": 0.02711251694532309,
+      "dice": 0.29964157938957214,
+      "gt_foreground_fraction": 0.033233642578125,
+      "n_gt_components": 24
+    }
+  ],
+  "best_cases": [
+    {
+      "filename": "human epiglottis__human_epiglottis_7.png",
+      "organ": "human epiglottis",
+      "gradcam_iou_overlap": 0.700349956255468,
+      "dice": 0.6826424598693848,
+      "gt_foreground_fraction": 0.032257080078125,
+      "n_gt_components": 14
+    },
+    {
+      "filename": "mouse muscle_tibia__mouse_muscle_tibia_20.png",
+      "organ": "mouse muscle_tibia",
+      "gradcam_iou_overlap": 0.6461538461538462,
+      "dice": 0.8096514940261841,
+      "gt_foreground_fraction": 0.0028076171875,
+      "n_gt_components": 2
+    },
+    {
+      "filename": "human muscle__human_muscle_6.png",
+      "organ": "human muscle",
+      "gradcam_iou_overlap": 0.6459114778694673,
+      "dice": 0.6543400287628174,
+      "gt_foreground_fraction": 0.0201263427734375,
+      "n_gt_components": 8
+    }
+  ],
+  "what_distinguishes_failures": {
+    "mean_gt_foreground_fraction_worst": 0.01551055908203125,
+    "mean_gt_foreground_fraction_best": 0.018397013346354168,
+    "mean_dice_worst": 0.22754725813865662,
+    "mean_dice_best": 0.7155447006225586,
+    "mean_n_components_worst": 9.5,
+    "mean_n_components_best": 8.0
+  }
+}

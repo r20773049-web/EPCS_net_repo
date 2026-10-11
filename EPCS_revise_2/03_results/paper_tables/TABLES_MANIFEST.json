@@ -1,0 +1,20 @@
+{
+  "generated": "2026-10-11T15:39:59",
+  "tables_built": [
+    "CryoNuSeg quantitative",
+    "NuInsSeg quantitative",
+    "CryoNuSeg cost",
+    "NuInsSeg cost",
+    "per-run detail",
+    "significance",
+    "bootstrap",
+    "ablation",
+    "per-organ",
+    "DPNP NuInsSeg",
+    "DPNP CryoNuSeg",
+    "components vs instances",
+    "OSPT sampling"
+  ],
+  "workbook": "<PROJECT_ROOT>\\04_results\\paper_tables\\EPCS_R3_Paper_Tables.xlsx",
+  "latex_dir": "<PROJECT_ROOT>\\04_results\\paper_tables\\latex"
+}

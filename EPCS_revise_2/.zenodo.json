@@ -1,0 +1,12 @@
+{
+  "title": "EPCS-Net: SAM-guided multi-scale nuclei segmentation - code, results and trained checkpoints",
+  "upload_type": "software",
+  "description": "Code, per-run results and manifest of trained checkpoints for the EPCS-Net manuscript (Scientific Reports, revision 3).",
+  "license": "MIT",
+  "creators": [
+    {"name": "Shinde, Swati V."}, {"name": "Warade, Purva S."}, {"name": "Gabralla, Lubna A."},
+    {"name": "Ahirrao, Asmita P."}, {"name": "Wakchaure, Shreeja S."}, {"name": "Chavan, Rutuja S."},
+    {"name": "Choudhury, Tanupriya"}, {"name": "Minakshi"}
+  ],
+  "keywords": ["nuclei segmentation", "Segment Anything", "histopathology", "deep learning"]
+}

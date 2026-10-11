@@ -1,0 +1,12 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_comparison_workbooks.py
+# exit code: 0
+# seconds: 2.9
+
+===== STDOUT =====
+Writing workbooks to <PROJECT_ROOT>\02_comparison_workbooks
+  wrote EPCS_R3_Results_Comparison.xlsx  (13 sheets)
+  wrote EPCS_R3_Task_Schedule.xlsx  (6 sheets)
+Done.
+
+===== STDERR =====
+

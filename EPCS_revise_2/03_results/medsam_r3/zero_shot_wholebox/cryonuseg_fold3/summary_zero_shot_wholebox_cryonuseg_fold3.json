@@ -1,0 +1,27 @@
+{
+  "model": "medsam",
+  "mode": "zero_shot_wholebox",
+  "dataset": "cryonuseg_fold3",
+  "checkpoint": "wanglab/medsam-vit-base",
+  "dry_run": false,
+  "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\cryonuseg_R3_fold3.csv",
+  "split_used": "test",
+  "n_test_images": 10,
+  "metric_mean": {
+    "accuracy": 0.6936031341552469,
+    "precision": 0.4707961277317083,
+    "recall": 0.30494242761056267,
+    "specificity": 0.814450625527994,
+    "dice": 0.2736515933269305,
+    "iou": 0.16731989539934664
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.11547573845830413,
+    "precision": 0.1865574173271701,
+    "recall": 0.2795696964471355,
+    "specificity": 0.22423871146613814,
+    "dice": 0.15345415104754892,
+    "iou": 0.11045294032979701
+  },
+  "protocol": "round-2 protocol: one whole-image box, best-predicted-IoU of 3 masks (sanity check)"
+}

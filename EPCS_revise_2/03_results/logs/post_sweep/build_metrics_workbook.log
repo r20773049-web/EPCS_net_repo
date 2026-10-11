@@ -1,0 +1,10 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_metrics_workbook.py
+# exit code: 0
+# seconds: 3.0
+
+===== STDOUT =====
+runs: 215 {'cryonuseg': 175, 'nuinsseg': 40}
+summaries missing metrics: none
+
+===== STDERR =====
+

@@ -1,0 +1,16 @@
+{
+  "predictions_dir": "04_results\\nuinsseg\\nuinsseg\\epcs_net\\seed2024\\test_predictions",
+  "images_analysed": 103,
+  "images_skipped_no_instance_mask": 0,
+  "min_overlap_px": 10,
+  "min_component_area_px": 5,
+  "total_gt_instances": 5207,
+  "total_pred_components": 3614,
+  "overall_count_ratio": 0.6940656808142884,
+  "mean_merge_rate": 0.17968103510155312,
+  "mean_clean_rate": 0.6266914174543955,
+  "mean_split_rate": 0.05824586564811515,
+  "mean_gt_per_component": 1.2394689453465493,
+  "max_gt_in_one_component": 32,
+  "cryonuseg": "excluded: ships binary masks only, no instance ground truth"
+}

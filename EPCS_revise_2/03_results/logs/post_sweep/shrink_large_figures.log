@@ -1,0 +1,10 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\shrink_large_figures.py
+# exit code: 0
+# seconds: 1.5
+
+===== STDOUT =====
+r3_qual_cryonuseg.png: 4.37 -> 2.58 MB (2000x1627)
+r3_qual_nuinsseg.png: 1.59 -> 1.18 MB (2000x1709)
+
+===== STDERR =====
+

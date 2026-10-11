@@ -1,0 +1,102 @@
+{
+  "split_seed": 20261005,
+  "cryonuseg": {
+    "dataset": "CryoNuSeg",
+    "design": "tissue-stratified 3-fold CV",
+    "n_patches": 30,
+    "tissues": [
+      "AdrenalGland",
+      "Larynx",
+      "LymphNodes",
+      "Mediastinum",
+      "Pancreas",
+      "Pleura",
+      "Skin",
+      "Testes",
+      "Thymus",
+      "ThyroidGland"
+    ],
+    "replicates": [
+      1,
+      2,
+      3
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "manifest": "cryonuseg_R3_fold1.csv",
+        "test_replicate": 1,
+        "val_replicate": 2,
+        "val_tissues": [
+          "AdrenalGland",
+          "LymphNodes",
+          "Pancreas",
+          "Skin",
+          "Thymus"
+        ],
+        "counts": {
+          "train": 15,
+          "validation": 5,
+          "test": 10
+        },
+        "test_tissue_count": 10,
+        "test_covers_all_tissues": true
+      },
+      {
+        "fold": 2,
+        "manifest": "cryonuseg_R3_fold2.csv",
+        "test_replicate": 2,
+        "val_replicate": 3,
+        "val_tissues": [
+          "Larynx",
+          "Mediastinum",
+          "Pleura",
+          "Testes",
+          "ThyroidGland"
+        ],
+        "counts": {
+          "train": 15,
+          "validation": 5,
+          "test": 10
+        },
+        "test_tissue_count": 10,
+        "test_covers_all_tissues": true
+      },
+      {
+        "fold": 3,
+        "manifest": "cryonuseg_R3_fold3.csv",
+        "test_replicate": 3,
+        "val_replicate": 1,
+        "val_tissues": [
+          "AdrenalGland",
+          "LymphNodes",
+          "Pancreas",
+          "Skin",
+          "Thymus"
+        ],
+        "counts": {
+          "train": 15,
+          "validation": 5,
+          "test": 10
+        },
+        "test_tissue_count": 10,
+        "test_covers_all_tissues": true
+      }
+    ]
+  },
+  "nuinsseg": {
+    "dataset": "NuInsSeg",
+    "design": "organ-stratified 70/15/15",
+    "manifest": "nuinsseg_R3_stratified_70_15_15.csv",
+    "per_organ_counts": "nuinsseg_R3_per_organ_counts.csv",
+    "n_patches": 665,
+    "n_organs": 31,
+    "counts": {
+      "train": 459,
+      "validation": 103,
+      "test": 103
+    },
+    "organs_without_test": [],
+    "organs_without_validation": []
+  }
+}

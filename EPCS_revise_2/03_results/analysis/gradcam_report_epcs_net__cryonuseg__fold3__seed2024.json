@@ -1,0 +1,84 @@
+{
+  "run_id": "epcs_net__cryonuseg__fold3__seed2024",
+  "dataset": "cryonuseg",
+  "split": "test",
+  "n_images": 10,
+  "threshold": 0.5,
+  "method": "hook d1, score = mean foreground probability, channel weights = spatial mean of gradients, ReLU of weighted sum, bilinear upsample, normalise to [0,1]; identical to the previously published method",
+  "overlap_mean": 0.22642616610604743,
+  "overlap_sd": 0.08206742564293397,
+  "overlap_median": 0.20871961835907876,
+  "overlap_p10": 0.1550550995946817,
+  "overlap_p90": 0.2761276123126143,
+  "overlap_min": 0.15495841330774152,
+  "overlap_max": 0.42561622464898596,
+  "failure_panel_figure": "<PROJECT_ROOT>\\05_manuscript\\figures\\fig13_gradcam_best_and_failure_cases_cryonuseg.png",
+  "worst_cases": [
+    {
+      "filename": "Human_Pancreas_03.tif",
+      "organ": "Pancreas",
+      "gradcam_iou_overlap": 0.15495841330774152,
+      "dice": 0.6905628442764282,
+      "gt_foreground_fraction": 0.118133544921875,
+      "n_gt_components": 77
+    },
+    {
+      "filename": "Human_Pleura_03.tif",
+      "organ": "Pleura",
+      "gradcam_iou_overlap": 0.15506584251545283,
+      "dice": 0.7799185514450073,
+      "gt_foreground_fraction": 0.226898193359375,
+      "n_gt_components": 117
+    },
+    {
+      "filename": "Human_AdrenalGland_03.tif",
+      "organ": "AdrenalGland",
+      "gradcam_iou_overlap": 0.1604997597308986,
+      "dice": 0.767076849937439,
+      "gt_foreground_fraction": 0.158660888671875,
+      "n_gt_components": 92
+    },
+    {
+      "filename": "Human_Thymus_03.tif",
+      "organ": "Thymus",
+      "gradcam_iou_overlap": 0.18248310915514784,
+      "dice": 0.8356916308403015,
+      "gt_foreground_fraction": 0.245849609375,
+      "n_gt_components": 196
+    }
+  ],
+  "best_cases": [
+    {
+      "filename": "Human_LymphNodes_03.tif",
+      "organ": "LymphNodes",
+      "gradcam_iou_overlap": 0.42561622464898596,
+      "dice": 0.907320499420166,
+      "gt_foreground_fraction": 0.4885406494140625,
+      "n_gt_components": 252
+    },
+    {
+      "filename": "Human_Skin_03.tif",
+      "organ": "Skin",
+      "gradcam_iou_overlap": 0.25951776649746194,
+      "dice": 0.7311766147613525,
+      "gt_foreground_fraction": 0.238433837890625,
+      "n_gt_components": 139
+    },
+    {
+      "filename": "Human_Testes_03.tif",
+      "organ": "Testes",
+      "gradcam_iou_overlap": 0.25727056693448,
+      "dice": 0.8456637859344482,
+      "gt_foreground_fraction": 0.2693634033203125,
+      "n_gt_components": 141
+    }
+  ],
+  "what_distinguishes_failures": {
+    "mean_gt_foreground_fraction_worst": 0.18738555908203125,
+    "mean_gt_foreground_fraction_best": 0.3321126302083333,
+    "mean_dice_worst": 0.7683125138282776,
+    "mean_dice_best": 0.8280536532402039,
+    "mean_n_components_worst": 120.5,
+    "mean_n_components_best": 177.33333333333334
+  }
+}

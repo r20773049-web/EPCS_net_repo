@@ -1,0 +1,94 @@
+{
+  "tag": "r3_nuinsseg",
+  "predictions_dir": "<PROJECT_ROOT>\\04_results\\nuinsseg\\nuinsseg\\epcs_net\\seed2024\\test_predictions",
+  "n_images": 103,
+  "n_components": 3614,
+  "feature_vector": {
+    "interpretable": [
+      "area",
+      "roundness",
+      "mean_intensity",
+      "var_intensity",
+      "L",
+      "a",
+      "b"
+    ],
+    "embedding_dims": 512,
+    "total_dims": 519
+  },
+  "pca": {
+    "n_components": 40,
+    "explained_variance_pct": [
+      19.904362296187784,
+      11.689965593880721,
+      8.07129530748736
+    ],
+    "cumulative_first_three_pct": 39.66562319755587
+  },
+  "clustering_primary_prespecified": {
+    "min_cluster_size": 361,
+    "min_samples": 5,
+    "metric": "euclidean",
+    "n_points": 3614,
+    "n_clusters": 0,
+    "outlier_pct": 100.0,
+    "silhouette_geometric_separation": null,
+    "cluster_sizes": {}
+  },
+  "clustering_sensitivity_fixed5": {
+    "min_cluster_size": 5,
+    "min_samples": 5,
+    "metric": "euclidean",
+    "n_points": 3614,
+    "n_clusters": 2,
+    "outlier_pct": 45.98782512451577,
+    "silhouette_geometric_separation": 0.3210327633725067,
+    "cluster_sizes": {
+      "0": 1947,
+      "1": 5
+    }
+  },
+  "sensitivity_stability": {
+    "n_bootstrap": 25,
+    "subsample_fraction": 0.8,
+    "ari_mean": 0.5394061132581097,
+    "ari_sd": 0.3099448406557027,
+    "ari_min": -0.008214295716288017,
+    "ari_max": 0.9475764686806386,
+    "n_clusters_mean": 3.4,
+    "n_clusters_range": [
+      2,
+      14
+    ]
+  },
+  "confounds": [
+    {
+      "confound": "organ",
+      "n_levels": 31,
+      "chi2": 16.39599794555727,
+      "dof": 30,
+      "p_value": 0.9791358273173913,
+      "cramers_v": 0.09164927229091085,
+      "interpretation": "no detected association"
+    },
+    {
+      "confound": "species",
+      "n_levels": 2,
+      "chi2": 1.5942253651543066,
+      "dof": 1,
+      "p_value": 0.20672348430222412,
+      "cramers_v": 0.028578205229089104,
+      "interpretation": "no detected association"
+    },
+    {
+      "confound": "filename",
+      "n_levels": 102,
+      "chi2": 137.45656491542468,
+      "dof": 101,
+      "p_value": 0.009279904692244973,
+      "cramers_v": 0.265364508158644,
+      "interpretation": "cluster assignment is associated with this variable"
+    }
+  ],
+  "statement": "A silhouette score measures geometric separation in a feature space. It is not biological validation. These outputs are exploratory connected-region descriptors, not per-nucleus phenotypes; see instances_r3.py for the measured merge rate."
+}

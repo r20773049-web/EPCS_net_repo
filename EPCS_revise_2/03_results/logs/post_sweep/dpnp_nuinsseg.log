@@ -1,0 +1,93 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\03_code\analysis\dpnp_r3.py --predictions <PROJECT_ROOT>\04_results\nuinsseg\nuinsseg\epcs_net\seed2024\test_predictions --split <PROJECT_ROOT>\04_results\splits\nuinsseg_R3_stratified_70_15_15.csv --only-split test --tag r3_nuinsseg
+# exit code: 0
+# seconds: 20.8
+
+===== STDOUT =====
+============================================================================
+DPNP  r3_nuinsseg   3,614 components from 103 images
+============================================================================
+feature vector: 7 interpretable + 512 embedding = 519 dims
+
+PCA explained variance: PC1 19.90%  PC2 11.69%  PC3 8.07%
+
+LOADING MASS -- can the component labels be supported?
+  PC      var %   interpretable %   embedding %       top feature
+  PC1     19.90              1.19         98.81              area
+  PC2     11.69              0.79         99.21                 a
+  PC3      8.07              1.04         98.96     var_intensity
+
+STRONGEST INTERPRETABLE CORRELATIONS
+  PC1: area rho=+0.865   var_intensity rho=+0.563
+  PC2: area rho=+0.541   a rho=+0.454
+  PC3: var_intensity rho=+0.503   a rho=-0.350
+
+CLUSTERING -- PRIMARY (prespecified, min_cluster_size = max(5, N/10) = 361)
+  clusters 0   outliers 100.0%   silhouette None
+CLUSTERING -- SENSITIVITY CHECK (min_cluster_size = 5)
+  clusters 2   outliers 46.0%   silhouette 0.3210327633725067
+  stability: ARI 0.539 +/- 0.310 over 25 subsamples, clusters [2, 14]
+  confound checks:
+    organ      Cramer's V 0.092  p 0.979  -> no detected association
+    species    Cramer's V 0.029  p 0.207  -> no detected association
+    filename   Cramer's V 0.265  p 0.00928  -> cluster assignment is associated with this variable
+
+A silhouette score measures geometric separation in a feature space. It is not biological validation. These outputs are exploratory connected-region descriptors, not per-nucleus phenotypes; see instances_r3.py for the measured merge rate.
+
+Outputs in <PROJECT_ROOT>\04_results\analysis
+
+===== STDERR =====
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+<LOCAL_PATH> FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+

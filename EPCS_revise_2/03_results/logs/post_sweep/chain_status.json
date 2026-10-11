@@ -1,0 +1,175 @@
+{
+  "started": "2026-10-11T15:39:42",
+  "steps": {
+    "build_metrics_workbook": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_metrics_workbook.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_metrics_workbook.py"
+      ],
+      "start": "2026-10-11T15:39:44",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 3.0,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_metrics_workbook.log"
+    },
+    "build_epoch_workbooks": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_epoch_workbooks.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_epoch_workbooks.py"
+      ],
+      "start": "2026-10-11T15:39:47",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 3.2,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_epoch_workbooks.log"
+    },
+    "make_result_figures": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\make_result_figures.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\make_result_figures.py"
+      ],
+      "start": "2026-10-11T15:39:50",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 6.7,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\make_result_figures.log"
+    },
+    "shrink_large_figures": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\shrink_large_figures.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\shrink_large_figures.py"
+      ],
+      "start": "2026-10-11T15:39:57",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 1.5,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\shrink_large_figures.log"
+    },
+    "build_paper_tables": {
+      "script": "<PROJECT_ROOT>\\03_code\\tables\\build_paper_tables.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\03_code\\tables\\build_paper_tables.py"
+      ],
+      "start": "2026-10-11T15:39:58",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 0.9,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_paper_tables.log"
+    },
+    "build_comparison_workbooks": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_comparison_workbooks.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_comparison_workbooks.py"
+      ],
+      "start": "2026-10-11T15:39:59",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 2.9,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_comparison_workbooks.log"
+    },
+    "build_master_workbook": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_master_workbook.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_master_workbook.py"
+      ],
+      "start": "2026-10-11T15:40:02",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 1.9,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_master_workbook.log"
+    },
+    "build_comment_coverage": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_comment_coverage.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_comment_coverage.py"
+      ],
+      "start": "2026-10-11T15:40:04",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 0.3,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_comment_coverage.log"
+    },
+    "build_response_pdf": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_response_pdf.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_response_pdf.py"
+      ],
+      "start": "2026-10-11T15:40:04",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 0.5,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_response_pdf.log"
+    },
+    "build_overleaf_package": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_overleaf_package.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_overleaf_package.py"
+      ],
+      "start": "2026-10-11T15:40:05",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 0.7,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_overleaf_package.log"
+    },
+    "build_overleaf_project": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_overleaf_project.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_overleaf_project.py"
+      ],
+      "start": "2026-10-11T15:40:05",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 5.9,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_overleaf_project.log"
+    },
+    "build_lite_zip": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_lite_zip.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_lite_zip.py"
+      ],
+      "start": "2026-10-11T15:40:11",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 3.0,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_lite_zip.log"
+    },
+    "build_task_tracker": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_task_tracker.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_task_tracker.py"
+      ],
+      "start": "2026-10-11T15:40:14",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 0.3,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_task_tracker.log"
+    },
+    "build_results_view": {
+      "script": "<PROJECT_ROOT>\\06_scripts\\build_results_view.py",
+      "cmd": [
+        "<LOCAL_PATH>",
+        "<PROJECT_ROOT>\\06_scripts\\build_results_view.py"
+      ],
+      "start": "2026-10-11T15:40:15",
+      "result": "ok",
+      "exit_code": 0,
+      "seconds": 0.2,
+      "log": "<PROJECT_ROOT>\\04_results\\logs\\post_sweep\\build_results_view.log"
+    }
+  },
+  "sweep_done": "2026-10-11T15:39:42",
+  "finished": "2026-10-11T15:40:15"
+}

@@ -1,0 +1,5 @@
+*.pyc
+samGEnv/
+Outputs/
+wandb/
+log/

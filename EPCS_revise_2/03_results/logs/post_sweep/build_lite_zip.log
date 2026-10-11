@@ -1,0 +1,9 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_lite_zip.py
+# exit code: 0
+# seconds: 3.0
+
+===== STDOUT =====
+figures 11.6 MB -> 7.3 MB; zip 7.1 MB
+
+===== STDERR =====
+

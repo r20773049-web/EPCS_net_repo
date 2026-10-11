@@ -1,0 +1,393 @@
+[
+  {
+    "timestamp": "2026-10-07 06:27:21",
+    "runs_total": 177,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 2
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": null,
+        "epcs_net_n_runs": null,
+        "best_baseline": "unet",
+        "best_baseline_test_dice": 0.591457101687122
+      }
+    },
+    "comment": "First logged evaluation; no previous entry to compare with."
+  },
+  {
+    "timestamp": "2026-10-07 06:28:30",
+    "runs_total": 177,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 2
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": null,
+        "epcs_net_n_runs": null,
+        "best_baseline": "unet",
+        "best_baseline_test_dice": 0.591457101687122
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (177 -> 177). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-07 06:28:41",
+    "runs_total": 177,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 2
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": null,
+        "epcs_net_n_runs": null,
+        "best_baseline": "unet",
+        "best_baseline_test_dice": 0.591457101687122
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (177 -> 177). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 00:47:19",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+38 completed runs since last evaluation (177 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000)."
+  },
+  {
+    "timestamp": "2026-10-08 01:19:01",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 01:25:40",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 01:26:08",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 11:51:18",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 11:51:39",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 12:02:18",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 12:03:07",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 15:33:25",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 16:04:54",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-08 16:07:24",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-11 13:01:07",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-11 13:22:54",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  },
+  {
+    "timestamp": "2026-10-11 15:40:03",
+    "runs_total": 215,
+    "runs_per_dataset": {
+      "cryonuseg": 175,
+      "nuinsseg": 40
+    },
+    "headline": {
+      "cryonuseg": {
+        "epcs_net_test_dice": 0.7899322402249663,
+        "epcs_net_n_runs": 15,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.7776709771363748
+      },
+      "nuinsseg": {
+        "epcs_net_test_dice": 0.679681437589199,
+        "epcs_net_n_runs": 5,
+        "best_baseline": "sam_unet",
+        "best_baseline_test_dice": 0.6371599434078988
+      }
+    },
+    "comment": "+0 completed runs since last evaluation (215 -> 215). cryonuseg: EPCS-Net test Dice 0.7899 (+0.0000, runs 15 -> 15); best baseline sam_unet 0.7777 (+0.0000). nuinsseg: EPCS-Net test Dice 0.6797 (+0.0000, runs 5 -> 5); best baseline sam_unet 0.6372 (+0.0000). No new runs; numbers unchanged."
+  }
+]

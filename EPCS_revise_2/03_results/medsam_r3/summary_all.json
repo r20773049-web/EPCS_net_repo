@@ -1,0 +1,250 @@
+[
+  {
+    "model": "medsam",
+    "mode": "zero_shot_wholebox",
+    "dataset": "cryonuseg_fold1",
+    "checkpoint": "wanglab/medsam-vit-base",
+    "dry_run": false,
+    "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\cryonuseg_R3_fold1.csv",
+    "split_used": "test",
+    "n_test_images": 10,
+    "metric_mean": {
+      "accuracy": 0.7025722503661841,
+      "precision": 0.49073454396749927,
+      "recall": 0.16445435427297006,
+      "specificity": 0.9035731901564773,
+      "dice": 0.19944366692015342,
+      "iou": 0.11509841365682838
+    },
+    "metric_sample_sd": {
+      "accuracy": 0.13484052084944903,
+      "precision": 0.22356190056780037,
+      "recall": 0.13356688625872987,
+      "specificity": 0.14431245988668637,
+      "dice": 0.11620719202545514,
+      "iou": 0.07473250568164691
+    },
+    "protocol": "round-2 protocol: one whole-image box, best-predicted-IoU of 3 masks (sanity check)"
+  },
+  {
+    "model": "medsam",
+    "mode": "oracle_boxes",
+    "dataset": "cryonuseg_fold1",
+    "checkpoint": "wanglab/medsam-vit-base",
+    "dry_run": false,
+    "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\cryonuseg_R3_fold1.csv",
+    "split_used": "test",
+    "n_test_images": 10,
+    "metric_mean": {
+      "accuracy": 0.8260257720946951,
+      "precision": 0.72093699233173,
+      "recall": 0.7546601206131952,
+      "specificity": 0.8582702026039565,
+      "dice": 0.7129828995984042,
+      "iou": 0.5651578416836192
+    },
+    "metric_sample_sd": {
+      "accuracy": 0.12261900136375808,
+      "precision": 0.18963039323296826,
+      "recall": 0.08650733604357988,
+      "specificity": 0.15845798316863963,
+      "dice": 0.12466688233333428,
+      "iou": 0.12882212179461905
+    },
+    "ORACLE_UPPER_BOUND": "uses ground-truth connected-component boxes; not a competitor",
+    "components_per_image": {
+      "mean": 166.8,
+      "median": 139.0,
+      "min": 69,
+      "max": 410,
+      "total": 1668
+    },
+    "images_with_zero_components": 0
+  },
+  {
+    "model": "medsam",
+    "mode": "zero_shot_wholebox",
+    "dataset": "cryonuseg_fold2",
+    "checkpoint": "wanglab/medsam-vit-base",
+    "dry_run": false,
+    "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\cryonuseg_R3_fold2.csv",
+    "split_used": "test",
+    "n_test_images": 10,
+    "metric_mean": {
+      "accuracy": 0.6996070861816139,
+      "precision": 0.5799793417059909,
+      "recall": 0.15051594140831054,
+      "specificity": 0.9371497280135159,
+      "dice": 0.15045754051588306,
+      "iou": 0.08450631845625355
+    },
+    "metric_sample_sd": {
+      "accuracy": 0.16489938897824352,
+      "precision": 0.24904662268359667,
+      "recall": 0.23393115737511405,
+      "specificity": 0.14059152413491532,
+      "dice": 0.10395479571069811,
+      "iou": 0.06257724864773127
+    },
+    "protocol": "round-2 protocol: one whole-image box, best-predicted-IoU of 3 masks (sanity check)"
+  },
+  {
+    "model": "medsam",
+    "mode": "oracle_boxes",
+    "dataset": "cryonuseg_fold2",
+    "checkpoint": "wanglab/medsam-vit-base",
+    "dry_run": false,
+    "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\cryonuseg_R3_fold2.csv",
+    "split_used": "test",
+    "n_test_images": 10,
+    "metric_mean": {
+      "accuracy": 0.8246013641357107,
+      "precision": 0.6649525149679698,
+      "recall": 0.7303939334654361,
+      "specificity": 0.8757656179275571,
+      "dice": 0.6739922025376415,
+      "iou": 0.5143709501708656
+    },
+    "metric_sample_sd": {
+      "accuracy": 0.07200497334392551,
+      "precision": 0.18750188611833457,
+      "recall": 0.07881621064893679,
+      "specificity": 0.07066266800293053,
+      "dice": 0.09163378653204848,
+      "iou": 0.09800403226684781
+    },
+    "ORACLE_UPPER_BOUND": "uses ground-truth connected-component boxes; not a competitor",
+    "components_per_image": {
+      "mean": 184.3,
+      "median": 162.5,
+      "min": 91,
+      "max": 419,
+      "total": 1843
+    },
+    "images_with_zero_components": 0
+  },
+  {
+    "model": "medsam",
+    "mode": "zero_shot_wholebox",
+    "dataset": "cryonuseg_fold3",
+    "checkpoint": "wanglab/medsam-vit-base",
+    "dry_run": false,
+    "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\cryonuseg_R3_fold3.csv",
+    "split_used": "test",
+    "n_test_images": 10,
+    "metric_mean": {
+      "accuracy": 0.6936031341552469,
+      "precision": 0.4707961277317083,
+      "recall": 0.30494242761056267,
+      "specificity": 0.814450625527994,
+      "dice": 0.2736515933269305,
+      "iou": 0.16731989539934664
+    },
+    "metric_sample_sd": {
+      "accuracy": 0.11547573845830413,
+      "precision": 0.1865574173271701,
+      "recall": 0.2795696964471355,
+      "specificity": 0.22423871146613814,
+      "dice": 0.15345415104754892,
+      "iou": 0.11045294032979701
+    },
+    "protocol": "round-2 protocol: one whole-image box, best-predicted-IoU of 3 masks (sanity check)"
+  },
+  {
+    "model": "medsam",
+    "mode": "oracle_boxes",
+    "dataset": "cryonuseg_fold3",
+    "checkpoint": "wanglab/medsam-vit-base",
+    "dry_run": false,
+    "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\cryonuseg_R3_fold3.csv",
+    "split_used": "test",
+    "n_test_images": 10,
+    "metric_mean": {
+      "accuracy": 0.8489723205566081,
+      "precision": 0.6984395733803924,
+      "recall": 0.7490292644839379,
+      "specificity": 0.8830693226696551,
+      "dice": 0.7153344144844487,
+      "iou": 0.5608941068695659
+    },
+    "metric_sample_sd": {
+      "accuracy": 0.07006724386161393,
+      "precision": 0.1267748029697202,
+      "recall": 0.03895905674604149,
+      "specificity": 0.08097743284165103,
+      "dice": 0.07135866378374382,
+      "iou": 0.08148823193809286
+    },
+    "ORACLE_UPPER_BOUND": "uses ground-truth connected-component boxes; not a competitor",
+    "components_per_image": {
+      "mean": 159.2,
+      "median": 140.0,
+      "min": 81,
+      "max": 306,
+      "total": 1592
+    },
+    "images_with_zero_components": 0
+  },
+  {
+    "model": "medsam",
+    "mode": "zero_shot_wholebox",
+    "dataset": "nuinsseg",
+    "checkpoint": "wanglab/medsam-vit-base",
+    "dry_run": false,
+    "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\nuinsseg_R3_stratified_70_15_15.csv",
+    "split_used": "test",
+    "n_test_images": 103,
+    "metric_mean": {
+      "accuracy": 0.73151690288652,
+      "precision": 0.21216773631248445,
+      "recall": 0.2391104682103689,
+      "specificity": 0.8131702423297366,
+      "dice": 0.1475230801861313,
+      "iou": 0.08452691300527884
+    },
+    "metric_sample_sd": {
+      "accuracy": 0.16835620868687534,
+      "precision": 0.2203206824885846,
+      "recall": 0.26480315411919864,
+      "specificity": 0.2104347960291318,
+      "dice": 0.11923032906132842,
+      "iou": 0.07727026672528572
+    },
+    "protocol": "round-2 protocol: one whole-image box, best-predicted-IoU of 3 masks (sanity check)"
+  },
+  {
+    "model": "medsam",
+    "mode": "oracle_boxes",
+    "dataset": "nuinsseg",
+    "checkpoint": "wanglab/medsam-vit-base",
+    "dry_run": false,
+    "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\nuinsseg_R3_stratified_70_15_15.csv",
+    "split_used": "test",
+    "n_test_images": 103,
+    "metric_mean": {
+      "accuracy": 0.9339382208666397,
+      "precision": 0.7576370983281633,
+      "recall": 0.7671263338009793,
+      "specificity": 0.9568000810298429,
+      "dice": 0.7483714717030342,
+      "iou": 0.6071661798167681
+    },
+    "metric_sample_sd": {
+      "accuracy": 0.07001899206198303,
+      "precision": 0.15701455421196409,
+      "recall": 0.07844386730438582,
+      "specificity": 0.07363838677046983,
+      "dice": 0.10413647419344,
+      "iou": 0.11328634008292143
+    },
+    "ORACLE_UPPER_BOUND": "uses ground-truth connected-component boxes; not a competitor",
+    "components_per_image": {
+      "mean": 43.49514563106796,
+      "median": 37.0,
+      "min": 2,
+      "max": 235,
+      "total": 4480
+    },
+    "images_with_zero_components": 0
+  }
+]

@@ -1,0 +1,17 @@
+torch>=2.1
+torchvision
+numpy
+pandas
+scipy
+scikit-learn
+hdbscan
+matplotlib
+pillow
+opencv-python
+openpyxl
+tqdm
+transformers
+segment-anything
+python-docx
+reportlab
+pymupdf

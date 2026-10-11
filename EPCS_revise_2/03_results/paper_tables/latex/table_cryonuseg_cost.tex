@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{Computational cost on CryoNuSeg: parameter counts and controlled inference latency.}
+\label{tab:cryonuseg_cost_r3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Model} & \textbf{Params total (M)} & \textbf{Params trainable (M)} & \textbf{Frozen (M)} & \textbf{ms / image} & \textbf{Median ms} & \textbf{Images / s} & \textbf{Peak VRAM (MiB)} \\
+\midrule
+U-Net & 7.8496 & 7.8496 & 0.0000 & 2.0800 & 1.8900 & 481.4000 & 131.2000 \\
+U-Net++ & 2.2920 & 2.2920 & 0.0000 & 3.0600 & 2.8300 & 326.6000 & 93.9000 \\
+U-Net3+ & 6.6843 & 6.6843 & 0.0000 & 6.9800 & 6.9100 & 143.2000 & 423.8000 \\
+eU-Net3+ (no SAM) & 11.7673 & 11.7673 & 0.0000 & 2.5200 & 2.5200 & 396.5000 & 133.8000 \\
+SAM-guided baseline (bottleneck) & 102.2439 & 8.5084 & 93.7355 & 145.9600 & 147.2400 & 6.9000 & 2838.0000 \\
+Ref-21 X-Gated fusion, bottleneck & 107.8706 & 14.1351 & 93.7355 & 146.5800 & 147.8900 & 6.8000 & 2859.5000 \\
+Ref-21 X-Gated fusion, four scales & 109.0565 & 15.3210 & 93.7355 & 149.9400 & 151.2900 & 6.7000 & 2864.0000 \\
+EPCS-Net (proposed) & 120.4177 & 26.6822 & 93.7355 & 151.7100 & 153.0900 & 6.6000 & 2908.8000 \\
+\bottomrule
+\end{tabular}}
+\par\vspace{2pt}\footnotesize{Latency measured on an idle GPU with warm-up; see Methods.}
+\end{table}

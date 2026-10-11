@@ -1,0 +1,38 @@
+\begin{table}[H]
+\centering
+\caption{Paired comparisons between EPCS-Net and each baseline on matched seeds and identical splits, Holm-corrected within dataset.}
+\label{tab:significance_r3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+\textbf{Dataset} & \textbf{Comparison} & \textbf{Pairs} & \textbf{EPCS-Net} & \textbf{Baseline} & \textbf{Difference} & \textbf{95\% CI} & \textbf{Cohen's d} & \textbf{t p (Holm)} & \textbf{Wilcoxon p (Holm)} & \textbf{Significant} \\
+\midrule
+cryonuseg & U-Net++ & 15 & 0.7899 & 0.7152 & 0.0747 & [0.0588, 0.0907] & 2.5950 & 0.0000 & 0.0004 & yes \\
+cryonuseg & U-Net3+ & 15 & 0.7899 & 0.7230 & 0.0670 & [0.0434, 0.0905] & 1.5740 & 0.0001 & 0.0004 & yes \\
+cryonuseg & U-Net & 15 & 0.7899 & 0.7389 & 0.0510 & [0.0369, 0.0650] & 2.0110 & 0.0000 & 0.0004 & yes \\
+cryonuseg & 1. eU-Net3+ only (no SAM, no ACFB) & 5 & 0.7827 & 0.7351 & 0.0476 & [0.0290, 0.0662] & 3.1750 & 0.0229 & 0.6875 & yes \\
+cryonuseg & eU-Net3+ (no SAM) & 15 & 0.7899 & 0.7454 & 0.0445 & [0.0326, 0.0563] & 2.0800 & 0.0000 & 0.0004 & yes \\
+cryonuseg & 0. EPCS backbone, no SAM & 5 & 0.7827 & 0.7453 & 0.0374 & [-0.0030, 0.0778] & 1.1480 & 0.4973 & 1.0000 & no \\
+cryonuseg & Ref-21 X-Gated fusion, four scales & 15 & 0.7899 & 0.7590 & 0.0309 & [0.0197, 0.0420] & 1.5340 & 0.0001 & 0.0004 & yes \\
+cryonuseg & A. ACFB without PSPI & 5 & 0.7827 & 0.7545 & 0.0282 & [0.0075, 0.0489] & 1.6910 & 0.1940 & 0.6875 & no \\
+cryonuseg & Ref-21 X-Gated fusion, bottleneck & 15 & 0.7899 & 0.7637 & 0.0262 & [0.0169, 0.0355] & 1.5560 & 0.0001 & 0.0004 & yes \\
+cryonuseg & B. Random frozen embedding & 5 & 0.7827 & 0.7620 & 0.0207 & [-0.0005, 0.0419] & 1.2130 & 0.4811 & 0.6875 & no \\
+cryonuseg & 2. + SAM bottleneck fusion & 5 & 0.7827 & 0.7661 & 0.0166 & [-0.0046, 0.0377] & 0.9730 & 0.5711 & 1.0000 & no \\
+cryonuseg & SAM-guided baseline (bottleneck) & 15 & 0.7899 & 0.7777 & 0.0123 & [0.0036, 0.0209] & 0.7850 & 0.0088 & 0.0125 & yes \\
+cryonuseg & 3. + PSPI (four-scale) & 5 & 0.7827 & 0.7778 & 0.0048 & [-0.0177, 0.0274] & 0.2660 & 1.0000 & 1.0000 & no \\
+cryonuseg & 6. + FTAS loss (full EPCS-Net) & 5 & 0.7827 & 0.7827 & 0.0000 & [0.0000, 0.0000] & n/a & 1.0000 & 1.0000 & no \\
+cryonuseg & 4. + ACFB bidirectional gating & 5 & 0.7827 & 0.7844 & -0.0017 & [-0.0152, 0.0118] & -0.1560 & 1.0000 & 1.0000 & no \\
+cryonuseg & 5. + dual-kernel refinement & 5 & 0.7827 & 0.7868 & -0.0041 & [-0.0207, 0.0124] & -0.3110 & 1.0000 & 1.0000 & no \\
+cryonuseg & C. PSPI without ACFB & 5 & 0.7827 & 0.7878 & -0.0051 & [-0.0189, 0.0087] & -0.4620 & 1.0000 & 1.0000 & no \\
+cryonuseg & D. GroupNorm encoder & 5 & 0.7827 & 0.7927 & -0.0100 & [-0.0214, 0.0013] & -1.0970 & 0.4973 & 1.0000 & no \\
+nuinsseg & Ref-21 X-Gated fusion, four scales & 5 & 0.6797 & 0.5676 & 0.1121 & [0.0596, 0.1645] & 2.6520 & 0.0198 & 0.4375 & yes \\
+nuinsseg & eU-Net3+ (no SAM) & 5 & 0.6797 & 0.5900 & 0.0896 & [0.0500, 0.1293] & 2.8060 & 0.0198 & 0.4375 & yes \\
+nuinsseg & U-Net++ & 5 & 0.6797 & 0.5950 & 0.0847 & [0.0472, 0.1222] & 2.8020 & 0.0198 & 0.4375 & yes \\
+nuinsseg & Ref-21 X-Gated fusion, bottleneck & 5 & 0.6797 & 0.6049 & 0.0748 & [0.0405, 0.1092] & 2.7050 & 0.0198 & 0.4375 & yes \\
+nuinsseg & U-Net & 5 & 0.6797 & 0.6070 & 0.0727 & [0.0475, 0.0979] & 3.5860 & 0.0092 & 0.4375 & yes \\
+nuinsseg & U-Net3+ & 5 & 0.6797 & 0.6071 & 0.0726 & [0.0325, 0.1127] & 2.2470 & 0.0198 & 0.4375 & yes \\
+nuinsseg & SAM-guided baseline (bottleneck) & 5 & 0.6797 & 0.6372 & 0.0425 & [-0.0056, 0.0906] & 1.0980 & 0.0701 & 0.4375 & no \\
+\bottomrule
+\end{tabular}}
+\par\vspace{2pt}\footnotesize{With five pairs the Wilcoxon p-value has a floor of 0.0625.}
+\end{table}

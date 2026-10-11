@@ -1,0 +1,35 @@
+{
+  "model": "medsam",
+  "mode": "oracle_boxes",
+  "dataset": "cryonuseg_fold3",
+  "checkpoint": "wanglab/medsam-vit-base",
+  "dry_run": false,
+  "split_csv": "<PROJECT_ROOT>\\04_results\\splits\\cryonuseg_R3_fold3.csv",
+  "split_used": "test",
+  "n_test_images": 10,
+  "metric_mean": {
+    "accuracy": 0.8489723205566081,
+    "precision": 0.6984395733803924,
+    "recall": 0.7490292644839379,
+    "specificity": 0.8830693226696551,
+    "dice": 0.7153344144844487,
+    "iou": 0.5608941068695659
+  },
+  "metric_sample_sd": {
+    "accuracy": 0.07006724386161393,
+    "precision": 0.1267748029697202,
+    "recall": 0.03895905674604149,
+    "specificity": 0.08097743284165103,
+    "dice": 0.07135866378374382,
+    "iou": 0.08148823193809286
+  },
+  "ORACLE_UPPER_BOUND": "uses ground-truth connected-component boxes; not a competitor",
+  "components_per_image": {
+    "mean": 159.2,
+    "median": 140.0,
+    "min": 81,
+    "max": 306,
+    "total": 1592
+  },
+  "images_with_zero_components": 0
+}

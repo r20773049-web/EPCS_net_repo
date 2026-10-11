@@ -1,0 +1,24 @@
+\begin{table}[H]
+\centering
+\caption{Segmentation performance on the NuInsSeg test split. Mean $\pm$ SD across matched seeds, with 95\% CI in brackets (t-interval over runs). Rows below the rule are MedSAM reference points (zero-shot sanity check and oracle-box upper bound), excluded from the ranking; their SD is across test images. Checkpoints were selected on validation only.}
+\label{tab:nuinsseg_r3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\toprule
+\textbf{Model} & \textbf{Runs} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{Specificity} & \textbf{Dice (test)} & \textbf{IoU (test)} & \textbf{Params total (M)} & \textbf{Params trainable (M)} \\
+\midrule
+U-Net & 5 & 0.9190 $\pm$ 0.0014 [0.9172, 0.9208] & 0.7264 $\pm$ 0.0136 [0.7095, 0.7433] & 0.6372 $\pm$ 0.0266 [0.6042, 0.6702] & 0.9527 $\pm$ 0.0051 [0.9463, 0.9590] & 0.6070 $\pm$ 0.0171 [0.5858, 0.6282] & 0.4704 $\pm$ 0.0139 [0.4532, 0.4876] & 7.85 & 7.85 \\
+U-Net++ & 5 & 0.9194 $\pm$ 0.0104 [0.9064, 0.9324] & 0.7394 $\pm$ 0.0346 [0.6965, 0.7823] & 0.6080 $\pm$ 0.0303 [0.5704, 0.6456] & 0.9575 $\pm$ 0.0176 [0.9357, 0.9794] & 0.5950 $\pm$ 0.0146 [0.5769, 0.6131] & 0.4594 $\pm$ 0.0137 [0.4424, 0.4764] & 2.29 & 2.29 \\
+U-Net3+ & 5 & 0.9195 $\pm$ 0.0051 [0.9132, 0.9259] & 0.7238 $\pm$ 0.0214 [0.6972, 0.7503] & 0.6320 $\pm$ 0.0308 [0.5937, 0.6703] & 0.9548 $\pm$ 0.0090 [0.9436, 0.9659] & 0.6071 $\pm$ 0.0220 [0.5798, 0.6345] & 0.4685 $\pm$ 0.0198 [0.4438, 0.4931] & 6.68 & 6.68 \\
+eU-Net3+ (no SAM) & 5 & 0.9213 $\pm$ 0.0029 [0.9177, 0.9249] & 0.7466 $\pm$ 0.0052 [0.7402, 0.7530] & 0.5837 $\pm$ 0.0263 [0.5511, 0.6164] & 0.9649 $\pm$ 0.0057 [0.9578, 0.9720] & 0.5900 $\pm$ 0.0197 [0.5656, 0.6144] & 0.4532 $\pm$ 0.0154 [0.4341, 0.4723] & 11.77 & 11.77 \\
+SAM-guided baseline (bottleneck) & 5 & 0.9246 $\pm$ 0.0042 [0.9193, 0.9298] & 0.7340 $\pm$ 0.0186 [0.7109, 0.7570] & 0.6742 $\pm$ 0.0394 [0.6253, 0.7231] & 0.9533 $\pm$ 0.0065 [0.9452, 0.9614] & 0.6372 $\pm$ 0.0235 [0.6079, 0.6664] & 0.5010 $\pm$ 0.0212 [0.4747, 0.5273] & 102.24 & 8.51 \\
+Ref-21 X-Gated fusion, bottleneck & 5 & 0.9146 $\pm$ 0.0085 [0.9041, 0.9252] & 0.6944 $\pm$ 0.0378 [0.6475, 0.7413] & 0.6554 $\pm$ 0.0363 [0.6103, 0.7005] & 0.9443 $\pm$ 0.0158 [0.9246, 0.9639] & 0.6049 $\pm$ 0.0190 [0.5813, 0.6284] & 0.4657 $\pm$ 0.0168 [0.4449, 0.4866] & 107.87 & 14.14 \\
+Ref-21 X-Gated fusion, four scales & 5 & 0.8806 $\pm$ 0.0063 [0.8727, 0.8884] & 0.6430 $\pm$ 0.0177 [0.6210, 0.6650] & 0.6887 $\pm$ 0.0405 [0.6384, 0.7390] & 0.9045 $\pm$ 0.0084 [0.8940, 0.9149] & 0.5676 $\pm$ 0.0341 [0.5252, 0.6100] & 0.4349 $\pm$ 0.0294 [0.3984, 0.4714] & 109.06 & 15.32 \\
+EPCS-Net (proposed) & 5 & 0.9295 $\pm$ 0.0057 [0.9225, 0.9365] & 0.7001 $\pm$ 0.0176 [0.6782, 0.7220] & 0.7505 $\pm$ 0.0333 [0.7091, 0.7919] & 0.9493 $\pm$ 0.0074 [0.9401, 0.9584] & 0.6797 $\pm$ 0.0208 [0.6538, 0.7055] & 0.5391 $\pm$ 0.0206 [0.5135, 0.5646] & 120.42 & 26.68 \\
+\midrule
+MedSAM zero-shot, whole-image box (sanity check) & 103 img & 0.7315 $\pm$ 0.1684 & 0.2122 $\pm$ 0.2203 & 0.2391 $\pm$ 0.2648 & 0.8132 $\pm$ 0.2104 & 0.1475 $\pm$ 0.1192 & 0.0845 $\pm$ 0.0773 & n/a (frozen) & 0.00 \\
+MedSAM with ground-truth component boxes (ORACLE upper bound, not a competitor) & 103 img & 0.9339 $\pm$ 0.0700 & 0.7576 $\pm$ 0.1570 & 0.7671 $\pm$ 0.0784 & 0.9568 $\pm$ 0.0736 & 0.7484 $\pm$ 0.1041 & 0.6072 $\pm$ 0.1133 & n/a (frozen) & 0.00 \\
+\bottomrule
+\end{tabular}}
+\par\vspace{2pt}\footnotesize{Scores are test-split scores; no model saw the test split during training or checkpoint selection.}
+\end{table}

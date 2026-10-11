@@ -1,0 +1,24 @@
+Building SAM embedding cache
+  cryonuseg: 30/30 images  (3.4 img/s, eta 0s)
+  cryonuseg: wrote 60 embeddings, 0.23 GB -> cryonuseg_embeddings.npy
+  nuinsseg: 50/665 images  (3.4 img/s, eta 180s)
+  nuinsseg: 100/665 images  (3.4 img/s, eta 166s)
+  nuinsseg: 150/665 images  (3.4 img/s, eta 152s)
+  nuinsseg: 200/665 images  (3.4 img/s, eta 137s)
+  nuinsseg: 250/665 images  (3.4 img/s, eta 123s)
+  nuinsseg: 300/665 images  (3.4 img/s, eta 108s)
+  nuinsseg: 350/665 images  (3.4 img/s, eta 94s)
+  nuinsseg: 400/665 images  (3.4 img/s, eta 79s)
+  nuinsseg: 450/665 images  (3.3 img/s, eta 64s)
+  nuinsseg: 500/665 images  (3.3 img/s, eta 49s)
+  nuinsseg: 550/665 images  (3.3 img/s, eta 34s)
+  nuinsseg: 600/665 images  (3.3 img/s, eta 20s)
+  nuinsseg: 650/665 images  (3.3 img/s, eta 5s)
+  nuinsseg: 665/665 images  (3.3 img/s, eta 0s)
+  nuinsseg: wrote 1330 embeddings, 5.20 GB -> nuinsseg_embeddings.npy
+
+Verifying against live recomputation (bit-for-bit)
+  cryonuseg: 24/24 bit-identical, 0 within 1e-5, 0 failed (worst |diff| 0.000e+00)
+  nuinsseg: 24/24 bit-identical, 0 within 1e-5, 0 failed (worst |diff| 0.000e+00)
+
+CACHE VERIFIED EXACT

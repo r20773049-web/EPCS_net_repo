@@ -1,0 +1,32 @@
+organ,train,validation,test,total
+human bladder,8,2,2,12
+human brain,8,2,2,12
+human cardia,8,2,2,12
+human cerebellum,8,2,2,12
+human epiglottis,7,2,2,11
+human jejunum,6,2,2,10
+human kidney,7,2,2,11
+human liver,28,6,6,40
+human lung,7,2,2,11
+human melanoma,8,2,2,12
+human muscle,7,1,1,9
+human oesophagus,33,7,7,47
+human pancreas,30,7,7,44
+human peritoneum,8,2,2,12
+human placenta,28,6,6,40
+human pylorus,8,2,2,12
+human rectum,8,2,2,12
+human salivory gland,30,7,7,44
+human spleen,24,5,5,34
+human testis,8,2,2,12
+human tongue,28,6,6,40
+human tonsile,8,2,2,12
+human umbilical cord,7,2,2,11
+mouse fat (white and brown)_subscapula,30,6,6,42
+mouse femur,4,1,1,6
+mouse heart,20,4,4,28
+mouse kidney,28,6,6,40
+mouse liver,26,5,5,36
+mouse muscle_tibia,20,4,4,28
+mouse spleen,5,1,1,7
+mouse thymus,4,1,1,6

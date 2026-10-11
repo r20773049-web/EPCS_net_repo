@@ -1,0 +1,16 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\make_result_figures.py
+# exit code: 0
+# seconds: 6.7
+
+===== STDOUT =====
+wrote r3_headline_comparison
+wrote r3_seed_fold_stability
+wrote r3_training_curves
+wrote r3_qual_cryonuseg
+wrote r3_qual_nuinsseg
+wrote r3_ablation_5seed
+wrote r3_per_organ_cryonuseg
+wrote r3_per_organ_nuinsseg
+
+===== STDERR =====
+

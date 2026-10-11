@@ -1,0 +1,21 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\03_code\analysis\gradcam_r3.py --run <PROJECT_ROOT>\04_results\cryonuseg\cryonuseg\epcs_net\fold3_seed2024
+# exit code: 0
+# seconds: 7.3
+
+===== STDOUT =====
+Run     : epcs_net__cryonuseg__fold3__seed2024
+Split   : test  (10 images)
+
+CAM overlap IoU over 10 images
+  mean 0.2264  sd 0.0821  median 0.2087
+  range 0.1550 to 0.4256   p10 0.1551  p90 0.2761
+
+Worst 4 vs best 3 cases
+  GT foreground fraction   18.74%  vs  33.21%
+  Dice                     0.768   vs  0.828
+  GT components            120.5   vs  177.3
+
+Failure panel: <PROJECT_ROOT>\05_manuscript\figures\fig13_gradcam_best_and_failure_cases_cryonuseg.png
+
+===== STDERR =====
+

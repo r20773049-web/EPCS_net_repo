@@ -1,0 +1,25 @@
+\begin{table}[H]
+\centering
+\caption{Correspondence between predicted connected components and ground-truth nuclear instances on NuInsSeg.}
+\label{tab:components_r3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lc}
+\toprule
+\textbf{Quantity} & \textbf{Value} \\
+\midrule
+Ground-truth nuclei (instances) & 8,097 \\
+Predicted connected components & 4,995 \\
+Count ratio (components / nuclei) & 0.6170 \\
+Components merging 2+ nuclei & 21.1\% \\
+Components matching exactly 1 nucleus & 61.3\% \\
+Nuclei split across 2+ components & 6.1\% \\
+Mean nuclei per component & 1.3700 \\
+Most nuclei inside one component & 27 \\
+Feature bias, area (predicted / ground truth) & 1.441  (p = 5.92e-75) \\
+Feature bias, roundness (predicted / ground truth) & 1.045  (p = 1.24e-18) \\
+Feature bias, mean\_intensity (predicted / ground truth) & 1.033  (p = 3.72e-08) \\
+Feature bias, var\_intensity (predicted / ground truth) & 0.928  (p = 2.24e-21) \\
+\bottomrule
+\end{tabular}}
+\par\vspace{2pt}\footnotesize{Merging is measured, not assumed.}
+\end{table}

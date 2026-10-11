@@ -1,0 +1,9 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_results_view.py
+# exit code: 0
+# seconds: 0.2
+
+===== STDOUT =====
+view built: <PROJECT_ROOT>\NEW_RESULTS_R3 | 101 files; skipped 3
+
+===== STDERR =====
+

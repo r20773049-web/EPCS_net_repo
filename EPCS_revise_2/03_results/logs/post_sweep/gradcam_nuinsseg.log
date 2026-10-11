@@ -1,0 +1,21 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\03_code\analysis\gradcam_r3.py --run <PROJECT_ROOT>\04_results\nuinsseg\nuinsseg\epcs_net\seed2024
+# exit code: 0
+# seconds: 22.9
+
+===== STDOUT =====
+Run     : epcs_net__nuinsseg__seed2024
+Split   : test  (103 images)
+
+CAM overlap IoU over 103 images
+  mean 0.3155  sd 0.1726  median 0.3074
+  range 0.0165 to 0.7003   p10 0.0892  p90 0.5615
+
+Worst 4 vs best 3 cases
+  GT foreground fraction    1.55%  vs   1.84%
+  Dice                     0.228   vs  0.716
+  GT components              9.5   vs    8.0
+
+Failure panel: <PROJECT_ROOT>\05_manuscript\figures\fig13_gradcam_best_and_failure_cases_nuinsseg.png
+
+===== STDERR =====
+

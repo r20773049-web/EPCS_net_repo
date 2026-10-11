@@ -1,0 +1,3 @@
+confound,n_levels,chi2,dof,p_value,cramers_v,interpretation
+organ,10,10.949688687804992,9,0.279173302279778,0.08434931810311619,no detected association
+filename,30,52.51330713850395,29,0.004775523357702165,0.18472061888853303,cluster assignment is associated with this variable

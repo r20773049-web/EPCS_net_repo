@@ -1,0 +1,31 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\03_code\analysis\instances_r3.py --predictions <PROJECT_ROOT>\04_results\nuinsseg\nuinsseg\epcs_net\seed2024\test_predictions --split <PROJECT_ROOT>\04_results\splits\nuinsseg_R3_stratified_70_15_15.csv --tag r3
+# exit code: 0
+# seconds: 3.6
+
+===== STDOUT =====
+Predictions : <PROJECT_ROOT>\04_results\nuinsseg\nuinsseg\epcs_net\seed2024\test_predictions
+Images      : 665
+
+==========================================================================
+DO PREDICTED COMPONENTS CORRESPOND TO INDIVIDUAL NUCLEI?
+==========================================================================
+  ground-truth instances             5,318
+  predicted components               3,671
+  count ratio                        0.690
+  components merging >=2 nuclei      17.6%
+  components matching 1 nucleus      61.7%
+  nuclei split across components      5.7%
+  mean nuclei per component           1.22
+  worst single component held           32 nuclei
+
+FEATURE BIAS (predicted components vs ground-truth instances)
+  feature            pred mean     gt mean    ratio           p   effect
+  area                 250.114     203.535    1.229    8.25e-06   -0.056
+  roundness              0.831       0.795    1.046    1.61e-07   -0.065
+  mean_intensity        62.260      59.701    1.043    3.05e-06   -0.058
+  var_intensity         47.986      56.842    0.844    1.08e-56    0.198
+
+Outputs in <PROJECT_ROOT>\04_results\analysis
+
+===== STDERR =====
+

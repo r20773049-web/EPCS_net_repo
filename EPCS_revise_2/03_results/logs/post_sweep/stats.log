@@ -1,0 +1,92 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\03_code\analysis\stats_r3.py
+# exit code: 0
+# seconds: 3.1
+
+===== STDOUT =====
+Collected 215 completed runs (2 datasets, 19 models)
+  wrote aggregated_by_model.csv  (27 rows)
+  wrote paired_significance_tests.csv  (25 comparisons)
+  wrote fold_averaged_tests.csv  (7 comparisons)
+  wrote bootstrap_per_image.csv  (25 comparisons)
+  wrote per_organ_test_dice.csv  (438 rows)
+
+============================================================================================
+TEST-SPLIT DICE, mean +/- SD across matched runs
+============================================================================================
+
+cryonuseg
+  model                                runs   test Dice       SD              95% CI
+  D. GroupNorm encoder                    5      0.7927   0.0023    [0.7899, 0.7955]
+  EPCS-Net (proposed)                    15      0.7899   0.0170    [0.7805, 0.7993]
+  C. PSPI without ACFB                    5      0.7878   0.0066    [0.7796, 0.7960]
+  5. + dual-kernel refinement             5      0.7868   0.0047    [0.7810, 0.7926]
+  4. + ACFB bidirectional gating          5      0.7844   0.0016    [0.7823, 0.7864]
+  6. + FTAS loss (full EPCS-Net)          5      0.7827   0.0099    [0.7704, 0.7950]
+  3. + PSPI (four-scale)                  5      0.7778   0.0106    [0.7647, 0.7910]
+  SAM-guided baseline (bottleneck)       15      0.7777   0.0153    [0.7692, 0.7861]
+  2. + SAM bottleneck fusion              5      0.7661   0.0091    [0.7548, 0.7774]
+  Ref-21 X-Gated fusion, bottleneck      15      0.7637   0.0217    [0.7517, 0.7757]
+  B. Random frozen embedding              5      0.7620   0.0118    [0.7473, 0.7767]
+  Ref-21 X-Gated fusion, four scales     15      0.7590   0.0187    [0.7487, 0.7694]
+  A. ACFB without PSPI                    5      0.7545   0.0087    [0.7437, 0.7653]
+  eU-Net3+ (no SAM)                      15      0.7454   0.0213    [0.7337, 0.7572]
+  0. EPCS backbone, no SAM                5      0.7453   0.0251    [0.7141, 0.7765]
+  U-Net                                  15      0.7389   0.0256    [0.7247, 0.7531]
+  1. eU-Net3+ only (no SAM, no ACFB)      5      0.7351   0.0070    [0.7264, 0.7438]
+  U-Net3+                                15      0.7230   0.0415    [0.7000, 0.7460]
+  U-Net++                                15      0.7152   0.0262    [0.7007, 0.7297]
+
+nuinsseg
+  model                                runs   test Dice       SD              95% CI
+  EPCS-Net (proposed)                     5      0.6797   0.0208    [0.6538, 0.7055]
+  SAM-guided baseline (bottleneck)        5      0.6372   0.0235    [0.6079, 0.6664]
+  U-Net3+                                 5      0.6071   0.0220    [0.5798, 0.6345]
+  U-Net                                   5      0.6070   0.0171    [0.5858, 0.6282]
+  Ref-21 X-Gated fusion, bottleneck       5      0.6049   0.0190    [0.5813, 0.6284]
+  U-Net++                                 5      0.5950   0.0146    [0.5769, 0.6131]
+  eU-Net3+ (no SAM)                       5      0.5900   0.0197    [0.5656, 0.6144]
+  Ref-21 X-Gated fusion, four scales      5      0.5676   0.0341    [0.5252, 0.6100]
+
+============================================================================================
+PAIRED COMPARISONS AGAINST EPCS-NET (test Dice, Holm-corrected)
+============================================================================================
+
+cryonuseg
+  baseline                  n     diff              95% CI   t p(Holm)   W p(Holm)   sig
+  unetpp                   15   0.0747  [ 0.0588, 0.0907]      0.0000      0.0004   yes
+  unet3plus                15   0.0670  [ 0.0434, 0.0905]      0.0001      0.0004   yes
+  unet                     15   0.0510  [ 0.0369, 0.0650]      0.0000      0.0004   yes
+  abl1_nosam                5   0.0476  [ 0.0290, 0.0662]      0.0229      0.6875   yes
+  eunet3plus               15   0.0445  [ 0.0326, 0.0563]      0.0000      0.0004   yes
+  abl0_nosam_epcsbackbone   5   0.0374  [-0.0030, 0.0778]      0.4973      1.0000    no
+  ref21_pyramid            15   0.0309  [ 0.0197, 0.0420]      0.0001      0.0004   yes
+  ablA_acfb_nopspi          5   0.0282  [ 0.0075, 0.0489]      0.1940      0.6875    no
+  ref21_bottleneck         15   0.0262  [ 0.0169, 0.0355]      0.0001      0.0004   yes
+  ablB_random_embed         5   0.0207  [-0.0005, 0.0419]      0.4811      0.6875    no
+  abl2_bottleneck           5   0.0166  [-0.0046, 0.0377]      0.5711      1.0000    no
+  sam_unet                 15   0.0123  [ 0.0036, 0.0209]      0.0088      0.0125   yes
+  abl3_pspi                 5   0.0048  [-0.0177, 0.0274]      1.0000      1.0000    no
+  abl6_ftas                 5   0.0000  [ 0.0000, 0.0000]      1.0000      1.0000    no
+  abl4_bdsg                 5  -0.0017  [-0.0152, 0.0118]      1.0000      1.0000    no
+  abl5_dksr                 5  -0.0041  [-0.0207, 0.0124]      1.0000      1.0000    no
+  ablC_pspi_concat          5  -0.0051  [-0.0189, 0.0087]      1.0000      1.0000    no
+  ablD_gn_encoder           5  -0.0100  [-0.0214, 0.0013]      0.4973      1.0000    no
+  NOTE: with 5 pairs the Wilcoxon p-value cannot go below 0.0625, so it cannot reach 0.05.
+
+nuinsseg
+  baseline                  n     diff              95% CI   t p(Holm)   W p(Holm)   sig
+  ref21_pyramid             5   0.1121  [ 0.0596, 0.1645]      0.0198      0.4375   yes
+  eunet3plus                5   0.0896  [ 0.0500, 0.1293]      0.0198      0.4375   yes
+  unetpp                    5   0.0847  [ 0.0472, 0.1222]      0.0198      0.4375   yes
+  ref21_bottleneck          5   0.0748  [ 0.0405, 0.1092]      0.0198      0.4375   yes
+  unet                      5   0.0727  [ 0.0475, 0.0979]      0.0092      0.4375   yes
+  unet3plus                 5   0.0726  [ 0.0325, 0.1127]      0.0198      0.4375   yes
+  sam_unet                  5   0.0425  [-0.0056, 0.0906]      0.0701      0.4375    no
+  NOTE: with 5 pairs the Wilcoxon p-value cannot go below 0.0625, so it cannot reach 0.05.
+
+All outputs in <PROJECT_ROOT>\04_results\analysis
+
+===== STDERR =====
+<LOCAL_PATH> RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+

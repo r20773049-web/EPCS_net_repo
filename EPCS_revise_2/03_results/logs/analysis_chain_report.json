@@ -1,0 +1,46 @@
+{
+  "started": "2026-10-05T12:55:15",
+  "steps": [
+    {
+      "step": "stats_r3",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "step": "latency_r3",
+      "ok": false,
+      "note": "deferred"
+    },
+    {
+      "step": "gradcam_cryonuseg",
+      "ok": false,
+      "note": "no completed run"
+    },
+    {
+      "step": "gradcam_nuinsseg",
+      "ok": false,
+      "note": "no completed run"
+    },
+    {
+      "step": "dpnp_cryonuseg",
+      "ok": false,
+      "note": "no completed run"
+    },
+    {
+      "step": "dpnp_nuinsseg",
+      "ok": false,
+      "note": "no completed run"
+    },
+    {
+      "step": "instances_r3",
+      "ok": false,
+      "note": "no completed run"
+    },
+    {
+      "step": "build_paper_tables",
+      "ok": true,
+      "note": ""
+    }
+  ],
+  "finished": "2026-10-05T12:55:18"
+}

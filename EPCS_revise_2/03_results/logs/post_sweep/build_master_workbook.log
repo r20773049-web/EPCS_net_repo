@@ -1,0 +1,18 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_master_workbook.py
+# exit code: 0
+# seconds: 1.9
+
+===== STDOUT =====
+runs: 215 snapshot: <PROJECT_ROOT>\04_results\master_snapshots\EPCS_R3_MASTER_20261011_1540.xlsx
+  Master_PerRun: 215 rows
+  Master_Averages: 27 rows
+  Best_Values: 162 rows
+  Vs_Previous: 96 rows
+  Ablation: 24 rows
+  MedSAM: 12 rows
+  Significance: 57 rows
+  Evaluation_Log: 17 rows
+  Readme: 18 rows
+
+===== STDERR =====
+

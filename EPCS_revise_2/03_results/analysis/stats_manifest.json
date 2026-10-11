@@ -1,0 +1,28 @@
+{
+  "n_runs": 215,
+  "datasets": [
+    "cryonuseg",
+    "nuinsseg"
+  ],
+  "models": [
+    "abl0_nosam_epcsbackbone",
+    "abl1_nosam",
+    "abl2_bottleneck",
+    "abl3_pspi",
+    "abl4_bdsg",
+    "abl5_dksr",
+    "abl6_ftas",
+    "ablA_acfb_nopspi",
+    "ablB_random_embed",
+    "ablC_pspi_concat",
+    "ablD_gn_encoder",
+    "epcs_net",
+    "eunet3plus",
+    "ref21_bottleneck",
+    "ref21_pyramid",
+    "sam_unet",
+    "unet",
+    "unet3plus",
+    "unetpp"
+  ]
+}

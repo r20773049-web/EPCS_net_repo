@@ -1,0 +1,15 @@
+# <LOCAL_PATH> <PROJECT_ROOT>\06_scripts\build_response_pdf.py
+# exit code: 0
+# seconds: 0.5
+
+===== STDOUT =====
+REFUSING FINAL: 2 [[RESULT]] placeholder(s) remain; writing DRAFT only.
+PDF: <PROJECT_ROOT>\05_manuscript\response\EPCS_R3_Response_to_Reviewers_DRAFT.pdf
+DOCX: <PROJECT_ROOT>\05_manuscript\response\EPCS_R3_Response_to_Reviewers_DRAFT.docx
+verbatim comments: 29 used: 29 NOT used: []
+draft entries unmatched to a parent: []
+unresolved tex labels: []
+placeholders: 2
+
+===== STDERR =====
+

@@ -1,0 +1,15 @@
+Loading weights:   0%|          | 0/315 [00:00<?, ?it/s]Loading weights: 100%|##########| 315/315 [00:00<00:00, 34159.10it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+model=wanglab/medsam-vit-base device=cpu out=<PROJECT_ROOT>\04_results\medsam_r3
+[cryonuseg_fold1] 10 test images (cryonuseg_R3_fold1.csv)
+[cryonuseg_fold1] zero_shot_wholebox: dice 0.1994 iou 0.1151
+[cryonuseg_fold1] oracle_boxes: dice 0.7130 iou 0.5652
+[cryonuseg_fold2] 10 test images (cryonuseg_R3_fold2.csv)
+[cryonuseg_fold2] zero_shot_wholebox: dice 0.1505 iou 0.0845
+[cryonuseg_fold2] oracle_boxes: dice 0.6740 iou 0.5144
+[cryonuseg_fold3] 10 test images (cryonuseg_R3_fold3.csv)
+[cryonuseg_fold3] zero_shot_wholebox: dice 0.2737 iou 0.1673
+[cryonuseg_fold3] oracle_boxes: dice 0.7153 iou 0.5609
+[nuinsseg] 103 test images (nuinsseg_R3_stratified_70_15_15.csv)
+[nuinsseg] zero_shot_wholebox: dice 0.1475 iou 0.0845
+[nuinsseg] oracle_boxes: dice 0.7484 iou 0.6072
