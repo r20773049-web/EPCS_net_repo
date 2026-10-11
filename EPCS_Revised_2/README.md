@@ -6,8 +6,8 @@ This folder (`EPCS_Revised_2`) of the repository `EPCS_net_repo` holds the code,
 
 Code and results of the earlier submission stay in the other folders of the repository and are not changed. Numbers in this folder replace those of the earlier submission.
 
-* Archived release (Zenodo DOI): [`10.5281/zenodo.23297958`](https://doi.org/10.5281/zenodo.23297958) (code and results)
-* Release tag: `v2.0.0`, commit: `4f87d38`
+* Archived release (Zenodo DOI): [`10.5281/zenodo.23299100`](https://doi.org/10.5281/zenodo.23299100) (code and results)
+* Release tag: `v2.0.1`, commit: `eff4700`
 * Trained checkpoints: not archived because of their size (about 11.8 GB, 215 files); `05_checkpoints_manifest/CHECKPOINT_MANIFEST.csv` lists every file with size and SHA-256. Available from the authors on request.
 
 ## What the project is
