@@ -6,9 +6,9 @@ This folder (`EPCS_Revised_2`) of the repository `EPCS_net_repo` holds the code,
 
 Code and results of the earlier submission stay in the other folders of the repository and are not changed. Numbers in this folder replace those of the earlier submission.
 
-* Archived release (code and results, Zenodo DOI): `10.5281/zenodo.XXXXXXX`
-* Trained checkpoints (Zenodo DOI): `10.5281/zenodo.YYYYYYY`
-* Release tag: `vX.Y.Z`, commit: `<hash>`
+* Archived release (Zenodo DOI): [`10.5281/zenodo.23297958`](https://doi.org/10.5281/zenodo.23297958) (code and results)
+* Release tag: `v2.0.0`, commit: `4f87d38`
+* Trained checkpoints: not archived because of their size (about 11.8 GB, 215 files); `05_checkpoints_manifest/CHECKPOINT_MANIFEST.csv` lists every file with size and SHA-256. Available from the authors on request.
 
 ## What the project is
 EPCS-Net segments cell nuclei in H&E-stained histopathology images. A frozen Segment Anything (SAM ViT-B) image encoder supplies global context; a local DoubleConv encoder supplies fine detail. Three components combine them:
@@ -46,7 +46,7 @@ EPCS-Net has the highest mean Dice on both datasets. The margin over the SAM-gui
 | `02_pipeline_scripts/` | pipeline driver `post_sweep_chain.py`, builders for tables, figures and workbooks, checkers |
 | `03_results/` | per-run metrics and logs (`cryonuseg/`, `nuinsseg/`, `ablation/`, `reference21/`), `analysis/`, `epoch_workbooks/`, `latency/`, `medsam_r3/`, `paper_tables/`, `logs/`, `splits/` |
 | `04_figure_sources/` | Excalidraw sources of Figures 1-4 |
-| `05_checkpoints_manifest/` | `CHECKPOINT_MANIFEST.csv`: path, size, SHA-256 of all 215 checkpoints (the files are on Zenodo, not in git) |
+| `05_checkpoints_manifest/` | `CHECKPOINT_MANIFEST.csv`: path, size, SHA-256 of all 215 checkpoints (the files themselves are not archived) |
 | `06_data_info/` | split manifests (which image is in train, validation, test) |
 | `07_previous_rounds_code/` | code of earlier review rounds (no results; superseded) |
 
@@ -57,7 +57,7 @@ EPCS-Net has the highest mean Dice on both datasets. The margin over the SAM-gui
 * MedSAM weights (`wanglab/medsam-vit-base`) for the MedSAM evaluation.
 
 ## Checkpoints
-Four archives on the checkpoint Zenodo record (`EPCS_checkpoints_cryonuseg.zip`, `..._nuinsseg.zip`, `..._ablation.zip`, `..._reference21.zip`). Verify each file with the SHA-256 in `05_checkpoints_manifest/CHECKPOINT_MANIFEST.csv`. Paths inside the zips follow the `03_results/` layout.
+Not archived (size). The manifest in `05_checkpoints_manifest/CHECKPOINT_MANIFEST.csv` gives the path, size and SHA-256 of each of the 215 checkpoints; files provided by the authors on request can be verified against it. Checkpoints can also be regenerated with the code and the five seeds.
 
 ## Reproducing
 `pip install -r requirements.txt` (Python 3.11, PyTorch 2). Training one model needs a GPU with about 3 GB of memory (measured peak 2.9 GB for EPCS-Net). The scripts were written in a working tree with the folder names `03_code`, `04_results`, `06_scripts`; here they are `01_source_code`, `03_results`, `02_pipeline_scripts`. Scripts find the project root from their own location, so to re-run them recreate the original names or edit the root constant at the top of each script. All tables and figures in the paper can be regenerated from `03_results/` without retraining.
